@@ -41,7 +41,8 @@ static NSString* kAppId = @"136114726451991";
     [super viewDidLoad];
 	[[NSNotificationCenter defaultCenter] addObserverForName:@"creditsChange" object:nil queue:nil usingBlock:^(NSNotification *arg1) {
 		Game *game = [Game getGame];
-		creditsLabel.text = [NSString stringWithFormat:@"%d", [game.credits intValue]];
+		int credits = [game.credits intValue];
+		creditsLabel.text = [NSString stringWithFormat:@"%d", credits];
 	}];
 }
 
@@ -126,34 +127,16 @@ static NSString* kAppId = @"136114726451991";
 	}
 }
 
-- (IBAction) upBetPressed:(id) sender {
-	int bet = [betLabel.text intValue];
-	Game *game = [Game getGame];
-	[game bet:BET_DELTA];
-	bet +=  BET_DELTA;
-	betLabel.text = [NSString stringWithFormat:@"%d",bet];
-	
-}
-
-- (IBAction) downBetPressed:(id) sender {
-	int bet = [betLabel.text intValue];
-	Game *game = [Game getGame];
-	[game bet:-1*BET_DELTA];
-	bet -=  BET_DELTA;
-	betLabel.text = [NSString stringWithFormat:@"%d",bet];
-}
-
 - (void) correctAnswer {
-	int bet = [betLabel.text intValue];
+	int points = [betLabel.text intValue];
 	Game *game = [Game getGame];
-	[game winBet:bet];
+	[game changeCredits:points];
 	if([game isLastQuestion]) {
-		[self selectCategoryPressed:nil];
-		[game resetPuzzle];
+		[self puzzleFinished];
 		return;
 	}
-	NSLog(@"question index: %@", game.questionIndex);
 	[timer invalidate];
+	NSLog(@"question index: %@", game.questionIndex);
 	UIActionSheet *laserActionSheet = [[UIActionSheet alloc] initWithTitle:@"Correct Answer" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
     [laserActionSheet addButtonWithTitle:@"Next"];
 	[laserActionSheet showInView:self.view];
@@ -162,43 +145,41 @@ static NSString* kAppId = @"136114726451991";
 - (void) wrongAnswer {
 	Game *game = [Game getGame];
 	if([game isLastQuestion]) {
-		[self selectCategoryPressed:nil];
-		[game resetPuzzle];
+		[self puzzleFinished];
 		return;
 	}
 	[timer invalidate];
 	NSLog(@"question index: %@", game.questionIndex);
 	UIActionSheet *laserActionSheet = [[UIActionSheet alloc] initWithTitle:@"Wrong Answer" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
     [laserActionSheet addButtonWithTitle:@"Next"];
-	[laserActionSheet addButtonWithTitle:@"Retry"];
 	[laserActionSheet showInView:self.view];
 }
 
 - (void) timeOut {
 	Game *game = [Game getGame];
 	if([game isLastQuestion]) {
-		[self selectCategoryPressed:nil];
-		[game resetPuzzle];
+		[self puzzleFinished];
 		return;
 	}
+	[timer invalidate];
 	UIActionSheet *laserActionSheet = [[UIActionSheet alloc] initWithTitle:@"Out of Time" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
     [laserActionSheet addButtonWithTitle:@"Next"];
-	[laserActionSheet addButtonWithTitle:@"Retry"];
 	[laserActionSheet showInView:self.view];
 }
 
 - (void) puzzleFinished {
-	UIActionSheet *laserActionSheet = [[UIActionSheet alloc] initWithTitle:@"Puzzle Finished!" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles: nil];
-    [laserActionSheet addButtonWithTitle:@"Choose another puzzle"];
-	[laserActionSheet showInView:self.view];
+	[timer invalidate];
+	Game *game = [Game getGame];
+	game.puzzle.creditDelta = [NSNumber numberWithInt:[creditsLabel.text intValue]];
+	game.credits = [NSNumber numberWithInt:0];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Quiz completed" message:[NSString stringWithFormat:@"You have completed this quiz. Your score is %@", creditsLabel.text] delegate:self cancelButtonTitle:@"Play Another Quiz" otherButtonTitles:nil];
+	[alert show];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	if(buttonIndex == 0) {Game *game = [Game getGame];
+	if(buttonIndex == 0) {
 		betLabel.text = @"100";
 		timerLabel.text = @"30";
-		[game bet:100];
-		timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(downClock:) userInfo:nil repeats:YES];
 		[self setupQuestion];
 		
 	}
@@ -212,7 +193,27 @@ static NSString* kAppId = @"136114726451991";
 	int timeLeft = [timerLabel.text intValue];
 	timeLeft--;
 	timerLabel.text = [NSString stringWithFormat:@"%d", timeLeft];
+	if(timeLeft > 25) {
+		betLabel.text = [NSString stringWithFormat:@"%d", 100];
+	}
+	else if(timeLeft > 20) {
+		betLabel.text = [NSString stringWithFormat:@"%d", 75];
+	}
+	else if(timeLeft > 15) {
+		betLabel.text = [NSString stringWithFormat:@"%d", 50];
+	}
+	else if(timeLeft > 10) {
+		betLabel.text = [NSString stringWithFormat:@"%d", 25];
+	} 
+	else if(timeLeft > 5) {
+		betLabel.text = [NSString stringWithFormat:@"%d", 10];
+	}
+	else {
+		betLabel.text = [NSString stringWithFormat:@"%d", 5];
+	}
+	
 	if(timeLeft == 0) {
+		betLabel.text = [NSString stringWithFormat:@"%d", 0];
 		[timer invalidate];
 		[self timeOut];
 	}
@@ -230,10 +231,8 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void) resetBoard {
-	Game *game = [Game getGame];
 	betLabel.text = @"100";
 	timerLabel.text = @"30";
-	[game bet:100];
 	timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(downClock:) userInfo:nil repeats:YES];
 }
 
@@ -307,6 +306,15 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void)request:(FBRequest *)request didLoadRawResponse:(NSData *)data {
+}
+
+- (void)alertView:(UIAlertView  *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	PuzzlesViewController *controller = [[PuzzlesViewController alloc] init];
+	[self presentModalViewController:controller animated:YES];
+	[controller release];
+	Game *game = [Game getGame];
+	[game resetPuzzle];
+	[alertView release];
 }
 
 - (void)dealloc {

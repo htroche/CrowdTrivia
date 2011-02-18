@@ -129,6 +129,7 @@
 	game.question = [questions objectAtIndex:0];
 	game.timeLeft = [NSNumber numberWithInt:30];
 	game.questionIndex = [NSNumber numberWithInt:0];
+	game.credits = [NSNumber numberWithInt:0];
 	NSError *error;
 	[game save:error];
 	[self closeScreen];

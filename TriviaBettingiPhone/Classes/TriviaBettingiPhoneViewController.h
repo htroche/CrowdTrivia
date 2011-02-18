@@ -11,7 +11,7 @@
 #import "FBConnect.h"
 
 @interface TriviaBettingiPhoneViewController : UIViewController <UIActionSheetDelegate,FBRequestDelegate,
-FBDialogDelegate,FBSessionDelegate> {
+FBDialogDelegate,FBSessionDelegate,UIAlertViewDelegate> {
 	IBOutlet UIButton *answer1;
 	IBOutlet UIButton *answer2;
 	IBOutlet UIButton *answer3;
@@ -37,8 +37,6 @@ FBDialogDelegate,FBSessionDelegate> {
 - (IBAction) answer2Pressed:(id) sender;
 - (IBAction) answer3Pressed:(id) sender;
 - (IBAction) answer4Pressed:(id) sender;
-- (IBAction) upBetPressed:(id) sender;
-- (IBAction) downBetPressed:(id) sender;
 - (IBAction) facebookPressed:(id) sender;
 
 - (void) correctAnswer;
@@ -46,6 +44,7 @@ FBDialogDelegate,FBSessionDelegate> {
 - (void) setupQuestion;
 - (void) timeOut;
 - (void) resetBoard;
+- (void) puzzleFinished;
 
 
 @end

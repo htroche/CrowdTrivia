@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -282,13 +280,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>57</integer>
-									<integer>47</integer>
+									<integer>31</integer>
+									<integer>29</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 768}, {331, 587}}</string>
+							<string>{{0, 369}, {331, 587}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -318,12 +317,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>button.png</string>
+								<string>TriviaBettingiPhoneViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>button.png</string>
+										<string>TriviaBettingiPhoneViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>099C3AE3130E3D7D00A160C4</string>
+										<string>099C3B9D130E998500A160C4</string>
 										<key>history</key>
 										<array>
 											<string>09B256A612FA9CB700E1D08A</string>
@@ -349,33 +350,24 @@
 											<string>09B25A7D12FD60F100E1D08A</string>
 											<string>09B25A7E12FD60F100E1D08A</string>
 											<string>09B2619913029E6200E1D08A</string>
-											<string>099C38091303DB3800A160C4</string>
-											<string>099C380A1303DB3800A160C4</string>
 											<string>099C382E1303DD0600A160C4</string>
-											<string>099C382F1303DD0600A160C4</string>
 											<string>099C38331303DD0600A160C4</string>
 											<string>099C38341303DD0600A160C4</string>
 											<string>099C384B1304BA5300A160C4</string>
-											<string>099C39461307EEA700A160C4</string>
 											<string>099C39471307EEA700A160C4</string>
 											<string>099C39481307EEA700A160C4</string>
-											<string>099C39491307EEA700A160C4</string>
 											<string>099C394C1307EEA700A160C4</string>
 											<string>099C394F1307EEA700A160C4</string>
 											<string>099C39501307EEA700A160C4</string>
 											<string>099C39681307F1D500A160C4</string>
 											<string>099C396A1307F1D500A160C4</string>
 											<string>099C397E1307F2A900A160C4</string>
-											<string>099C3995130800EE00A160C4</string>
 											<string>099C3996130800EE00A160C4</string>
 											<string>099C3997130800EE00A160C4</string>
 											<string>099C3998130800EE00A160C4</string>
 											<string>099C3999130800EE00A160C4</string>
 											<string>099C3A85130DFE0900A160C4</string>
 											<string>099C3A86130DFE0900A160C4</string>
-											<string>099C3A87130DFE0900A160C4</string>
-											<string>099C3A88130DFE0900A160C4</string>
-											<string>099C3A89130DFE0900A160C4</string>
 											<string>099C3AD4130E3D7D00A160C4</string>
 											<string>099C3AD5130E3D7D00A160C4</string>
 											<string>099C3AD6130E3D7D00A160C4</string>
@@ -390,7 +382,16 @@
 											<string>099C3ADF130E3D7D00A160C4</string>
 											<string>099C3AE0130E3D7D00A160C4</string>
 											<string>099C3AE1130E3D7D00A160C4</string>
-											<string>099C3AE2130E3D7D00A160C4</string>
+											<string>099C3B10130E77FA00A160C4</string>
+											<string>099C3B94130E998500A160C4</string>
+											<string>099C3B95130E998500A160C4</string>
+											<string>099C3B96130E998500A160C4</string>
+											<string>099C3B97130E998500A160C4</string>
+											<string>099C3B98130E998500A160C4</string>
+											<string>099C3B99130E998500A160C4</string>
+											<string>099C3B9A130E998500A160C4</string>
+											<string>099C3B9B130E998500A160C4</string>
+											<string>099C3B9C130E998500A160C4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -402,14 +403,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {869, 379}}</string>
+								<string>{{0, 0}, {869, 371}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1308 107 1222 646 1280 -224 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>379pt</string>
+							<string>371pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -422,14 +423,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 384}, {869, 221}}</string>
+								<string>{{0, 376}, {869, 229}}</string>
 								<key>RubberWindowFrame</key>
 								<string>1308 107 1222 646 1280 -224 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>221pt</string>
+							<string>229pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -448,9 +449,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>099C3A8C130DFE0900A160C4</string>
+				<string>099C3AEC130E669F00A160C4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>099C3A8D130DFE0900A160C4</string>
+				<string>099C3AED130E669F00A160C4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -588,12 +589,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>099C3A96130DFE0900A160C4</string>
-		<string>099C3A97130DFE0900A160C4</string>
+		<string>099C3B9E130E998500A160C4</string>
+		<string>099C3B1D130E77FA00A160C4</string>
+		<string>099C3B1E130E77FA00A160C4</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>09B252F212F920C800E1D08A</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/htroche/Documents/TriviaBettingiPhone/TriviaBettingiPhone.xcodeproj</string>
+		<string>/Users/htroche/Documents/triviabetting/TriviaBettingiPhone/TriviaBettingiPhone.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>1308 107 1222 646 1280 -224 1280 1024 </string>
@@ -673,7 +675,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>09B252F212F920C800E1D08A</string>
-				<string>099C3A8E130DFE0900A160C4</string>
+				<string>099C3AEE130E669F00A160C4</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -795,13 +797,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>099C3A8F130DFE0900A160C4</string>
+				<string>099C3B15130E77FA00A160C4</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>099C3A90130DFE0900A160C4</string>
-				<string>099C3A91130DFE0900A160C4</string>
-				<string>099C3A92130DFE0900A160C4</string>
-				<string>099C3A93130DFE0900A160C4</string>
-				<string>099C3A94130DFE0900A160C4</string>
+				<string>099C3B16130E77FA00A160C4</string>
+				<string>099C3B17130E77FA00A160C4</string>
+				<string>099C3B18130E77FA00A160C4</string>
+				<string>099C3B19130E77FA00A160C4</string>
+				<string>099C3B1A130E77FA00A160C4</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -965,7 +967,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>099C3A95130DFE0900A160C4</string>
+				<string>099C3B1B130E77FA00A160C4</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

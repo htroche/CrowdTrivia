@@ -41,7 +41,7 @@
 	if(puzzle.lastPlayed != nil) {
 		NSDateFormatter *format = [[NSDateFormatter alloc] init];
 		[format setDateFormat:@"MM/dd/YYYY"];
-		lastPlayedLabel.text = [NSString stringWithFormat:@"Last played on %@", [format stringFromDate:puzzle.lastPlayed]];
+		lastPlayedLabel.text = [NSString stringWithFormat:@"Last played on %@ Score: %d", [format stringFromDate:puzzle.lastPlayed], [puzzle.creditDelta intValue]];
 		[format release];
 	} else {
 		lastPlayedLabel.text = @"Not played yet";

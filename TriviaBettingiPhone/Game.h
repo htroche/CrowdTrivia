@@ -14,7 +14,7 @@
 @class Puzzle;
 @class Question;
 
-@interface Game :  PersistentData  
+@interface Game :  PersistentData
 {
 	NSArray *questions;
 }
