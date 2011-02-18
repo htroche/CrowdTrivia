@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099C38381303DF4100A160C4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C38371303DF4100A160C4 /* facebook.png */; };
+		099C38391303DF4100A160C4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C38371303DF4100A160C4 /* facebook.png */; };
+		099C383A1303DF4100A160C4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C38371303DF4100A160C4 /* facebook.png */; };
+		099C383C1303E01B00A160C4 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C383B1303E01B00A160C4 /* twitter.png */; };
+		099C383D1303E01B00A160C4 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C383B1303E01B00A160C4 /* twitter.png */; };
+		099C383E1303E01B00A160C4 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C383B1303E01B00A160C4 /* twitter.png */; };
+		099C38E31307D94400A160C4 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 099C38CB1307D94400A160C4 /* FBDialog.bundle */; };
+		099C38E41307D94400A160C4 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38CF1307D94400A160C4 /* NSObject+SBJSON.m */; };
+		099C38E51307D94400A160C4 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D11307D94400A160C4 /* NSString+SBJSON.m */; };
+		099C38E61307D94400A160C4 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D31307D94400A160C4 /* SBJSON.m */; };
+		099C38E71307D94400A160C4 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D51307D94400A160C4 /* SBJsonBase.m */; };
+		099C38E81307D94400A160C4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D71307D94400A160C4 /* SBJsonParser.m */; };
+		099C38E91307D94400A160C4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D91307D94400A160C4 /* SBJsonWriter.m */; };
+		099C38EA1307D94400A160C4 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38DC1307D94400A160C4 /* FBRequest.m */; };
+		099C38EB1307D94400A160C4 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38DD1307D94400A160C4 /* Facebook.m */; };
+		099C38EC1307D94400A160C4 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38E01307D94400A160C4 /* FBLoginDialog.m */; };
+		099C38ED1307D94400A160C4 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38E21307D94400A160C4 /* FBDialog.m */; };
+		099C38EE1307D94400A160C4 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 099C38CB1307D94400A160C4 /* FBDialog.bundle */; };
+		099C38EF1307D94400A160C4 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38CF1307D94400A160C4 /* NSObject+SBJSON.m */; };
+		099C38F01307D94400A160C4 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D11307D94400A160C4 /* NSString+SBJSON.m */; };
+		099C38F11307D94400A160C4 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D31307D94400A160C4 /* SBJSON.m */; };
+		099C38F21307D94400A160C4 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D51307D94400A160C4 /* SBJsonBase.m */; };
+		099C38F31307D94400A160C4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D71307D94400A160C4 /* SBJsonParser.m */; };
+		099C38F41307D94400A160C4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D91307D94400A160C4 /* SBJsonWriter.m */; };
+		099C38F51307D94400A160C4 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38DC1307D94400A160C4 /* FBRequest.m */; };
+		099C38F61307D94400A160C4 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38DD1307D94400A160C4 /* Facebook.m */; };
+		099C38F71307D94400A160C4 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38E01307D94400A160C4 /* FBLoginDialog.m */; };
+		099C38F81307D94400A160C4 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38E21307D94400A160C4 /* FBDialog.m */; };
+		099C38F91307D94400A160C4 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 099C38CB1307D94400A160C4 /* FBDialog.bundle */; };
+		099C38FA1307D94400A160C4 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38CF1307D94400A160C4 /* NSObject+SBJSON.m */; };
+		099C38FB1307D94400A160C4 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D11307D94400A160C4 /* NSString+SBJSON.m */; };
+		099C38FC1307D94400A160C4 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D31307D94400A160C4 /* SBJSON.m */; };
+		099C38FD1307D94400A160C4 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D51307D94400A160C4 /* SBJsonBase.m */; };
+		099C38FE1307D94400A160C4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D71307D94400A160C4 /* SBJsonParser.m */; };
+		099C38FF1307D94400A160C4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38D91307D94400A160C4 /* SBJsonWriter.m */; };
+		099C39001307D94400A160C4 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38DC1307D94400A160C4 /* FBRequest.m */; };
+		099C39011307D94400A160C4 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38DD1307D94400A160C4 /* Facebook.m */; };
+		099C39021307D94400A160C4 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38E01307D94400A160C4 /* FBLoginDialog.m */; };
+		099C39031307D94400A160C4 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C38E21307D94400A160C4 /* FBDialog.m */; };
+		099C3A7A130DFBEC00A160C4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A79130DFBEC00A160C4 /* icon.png */; };
+		099C3A7B130DFBEC00A160C4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A79130DFBEC00A160C4 /* icon.png */; };
+		099C3A7C130DFBEC00A160C4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A79130DFBEC00A160C4 /* icon.png */; };
+		099C3A7E130DFBF500A160C4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A7D130DFBF500A160C4 /* background.png */; };
+		099C3A7F130DFBF500A160C4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A7D130DFBF500A160C4 /* background.png */; };
+		099C3A80130DFBF500A160C4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A7D130DFBF500A160C4 /* background.png */; };
+		099C3A82130DFDFE00A160C4 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A81130DFDFE00A160C4 /* button.png */; };
+		099C3A83130DFDFE00A160C4 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A81130DFDFE00A160C4 /* button.png */; };
+		099C3A84130DFDFE00A160C4 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A81130DFDFE00A160C4 /* button.png */; };
+		099C3A99130DFF2C00A160C4 /* answer-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A98130DFF2C00A160C4 /* answer-pressed.png */; };
+		099C3A9A130DFF2C00A160C4 /* answer-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A98130DFF2C00A160C4 /* answer-pressed.png */; };
+		099C3A9B130DFF2C00A160C4 /* answer-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A98130DFF2C00A160C4 /* answer-pressed.png */; };
+		099C3A9D130DFF9300A160C4 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A9C130DFF9300A160C4 /* answer.png */; };
+		099C3A9E130DFF9300A160C4 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A9C130DFF9300A160C4 /* answer.png */; };
+		099C3A9F130DFF9300A160C4 /* answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3A9C130DFF9300A160C4 /* answer.png */; };
+		099C3AA1130E004D00A160C4 /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AA0130E004D00A160C4 /* arrow-down.png */; };
+		099C3AA2130E004D00A160C4 /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AA0130E004D00A160C4 /* arrow-down.png */; };
+		099C3AA3130E004D00A160C4 /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AA0130E004D00A160C4 /* arrow-down.png */; };
+		099C3AA5130E00B100A160C4 /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AA4130E00B100A160C4 /* arrow-up.png */; };
+		099C3AA6130E00B100A160C4 /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AA4130E00B100A160C4 /* arrow-up.png */; };
+		099C3AA7130E00B100A160C4 /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AA4130E00B100A160C4 /* arrow-up.png */; };
+		099C3AAF130E024E00A160C4 /* puzzle-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AAE130E024E00A160C4 /* puzzle-button.png */; };
+		099C3AB0130E024E00A160C4 /* puzzle-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AAE130E024E00A160C4 /* puzzle-button.png */; };
+		099C3AB1130E024E00A160C4 /* puzzle-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AAE130E024E00A160C4 /* puzzle-button.png */; };
+		099C3AB3130E031800A160C4 /* counter-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AB2130E031800A160C4 /* counter-background.png */; };
+		099C3AB4130E031800A160C4 /* counter-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AB2130E031800A160C4 /* counter-background.png */; };
+		099C3AB5130E031800A160C4 /* counter-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AB2130E031800A160C4 /* counter-background.png */; };
+		09B252E112F8206200E1D08A /* Board1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E012F8206200E1D08A /* Board1.jpg */; };
+		09B252E712F82BF500E1D08A /* grey-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E612F82BF500E1D08A /* grey-button.png */; };
+		09B2536F12F956C300E1D08A /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536C12F956C300E1D08A /* PersistentData.m */; };
+		09B2537012F956C300E1D08A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536E12F956C300E1D08A /* DataModel.m */; };
+		09B2537A12F9570B00E1D08A /* TriviaBetting.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 09B2537912F9570B00E1D08A /* TriviaBetting.xcdatamodel */; };
+		09B2538012F957FC00E1D08A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B2537F12F957FC00E1D08A /* CoreData.framework */; };
+		09B253A412F95A6100E1D08A /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2539E12F95A6100E1D08A /* Question.m */; };
+		09B253A512F95A6100E1D08A /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253A012F95A6100E1D08A /* Puzzle.m */; };
+		09B253A612F95A6100E1D08A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253A212F95A6100E1D08A /* User.m */; };
+		09B253C412F95FDD00E1D08A /* PuzzleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253C312F95FDD00E1D08A /* PuzzleParser.m */; };
+		09B253E412F966DE00E1D08A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		09B253E512F966DE00E1D08A /* TriviaBettingiPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */; };
+		09B253E612F966DE00E1D08A /* Board1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E012F8206200E1D08A /* Board1.jpg */; };
+		09B253E912F966DE00E1D08A /* grey-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E612F82BF500E1D08A /* grey-button.png */; };
+		09B253EB12F966DE00E1D08A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		09B253EC12F966DE00E1D08A /* TriviaBettingiPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */; };
+		09B253ED12F966DE00E1D08A /* TriviaBettingiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m */; };
+		09B253EE12F966DE00E1D08A /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536C12F956C300E1D08A /* PersistentData.m */; };
+		09B253EF12F966DE00E1D08A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536E12F956C300E1D08A /* DataModel.m */; };
+		09B253F012F966DE00E1D08A /* TriviaBetting.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 09B2537912F9570B00E1D08A /* TriviaBetting.xcdatamodel */; };
+		09B253F212F966DE00E1D08A /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2539E12F95A6100E1D08A /* Question.m */; };
+		09B253F312F966DE00E1D08A /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253A012F95A6100E1D08A /* Puzzle.m */; };
+		09B253F412F966DE00E1D08A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253A212F95A6100E1D08A /* User.m */; };
+		09B253F512F966DE00E1D08A /* PuzzleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253C312F95FDD00E1D08A /* PuzzleParser.m */; };
+		09B253F712F966DE00E1D08A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		09B253F812F966DE00E1D08A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		09B253F912F966DE00E1D08A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		09B253FA12F966DE00E1D08A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B2537F12F957FC00E1D08A /* CoreData.framework */; };
+		09B254D812F9672A00E1D08A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B2537F12F957FC00E1D08A /* CoreData.framework */; };
+		09B254D912F9672A00E1D08A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		09B254DA12F9672A00E1D08A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		09B254DB12F9672A00E1D08A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		09B254DC12F9673500E1D08A /* TriviaBettingiPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */; };
+		09B254DD12F9673500E1D08A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		09B254DE12F9673500E1D08A /* TriviaBettingiPhone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* TriviaBettingiPhone-Info.plist */; };
+		09B254DF12F9673500E1D08A /* Board1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E012F8206200E1D08A /* Board1.jpg */; };
+		09B254E212F9673500E1D08A /* grey-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E612F82BF500E1D08A /* grey-button.png */; };
+		09B254E312F9673500E1D08A /* TriviaBetting.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 09B2537912F9570B00E1D08A /* TriviaBetting.xcdatamodel */; };
+		09B254E412F9673500E1D08A /* TriviaBettingiPhone-Info copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09B2540012F966DE00E1D08A /* TriviaBettingiPhone-Info copy.plist */; };
+		09B254E512F9674F00E1D08A /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536C12F956C300E1D08A /* PersistentData.m */; };
+		09B254E612F9674F00E1D08A /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536E12F956C300E1D08A /* DataModel.m */; };
+		09B254E812F9674F00E1D08A /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2539E12F95A6100E1D08A /* Question.m */; };
+		09B254E912F9674F00E1D08A /* Puzzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253A012F95A6100E1D08A /* Puzzle.m */; };
+		09B254EA12F9674F00E1D08A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253A212F95A6100E1D08A /* User.m */; };
+		09B254EB12F9674F00E1D08A /* TriviaBettingiPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */; };
+		09B254EC12F9674F00E1D08A /* TriviaBettingiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m */; };
+		09B254ED12F9674F00E1D08A /* PuzzleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B253C312F95FDD00E1D08A /* PuzzleParser.m */; };
+		09B254EF12F9676B00E1D08A /* TrivaBettingiPhoneUnitTest.octest in Resources */ = {isa = PBXBuildFile; fileRef = 09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */; };
+		09B254F412F9681700E1D08A /* PuzzleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B254F312F9681700E1D08A /* PuzzleTest.m */; };
+		09B2553B12F96F8800E1D08A /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B2553A12F96F8800E1D08A /* question.png */; };
+		09B2553C12F96F8800E1D08A /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B2553A12F96F8800E1D08A /* question.png */; };
+		09B2553D12F96F8800E1D08A /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B2553A12F96F8800E1D08A /* question.png */; };
+		09B2554112F9701500E1D08A /* PuzzlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2553F12F9701500E1D08A /* PuzzlesViewController.m */; };
+		09B2554212F9701500E1D08A /* PuzzlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B2554012F9701500E1D08A /* PuzzlesViewController.xib */; };
+		09B2554312F9701500E1D08A /* PuzzlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2553F12F9701500E1D08A /* PuzzlesViewController.m */; };
+		09B2554412F9701500E1D08A /* PuzzlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B2554012F9701500E1D08A /* PuzzlesViewController.xib */; };
+		09B2554512F9701500E1D08A /* PuzzlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2553F12F9701500E1D08A /* PuzzlesViewController.m */; };
+		09B2554612F9701500E1D08A /* PuzzlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B2554012F9701500E1D08A /* PuzzlesViewController.xib */; };
+		09B2557512F9750F00E1D08A /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B2557412F9750F00E1D08A /* slider-bg.png */; };
+		09B2557612F9750F00E1D08A /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B2557412F9750F00E1D08A /* slider-bg.png */; };
+		09B2557712F9750F00E1D08A /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B2557412F9750F00E1D08A /* slider-bg.png */; };
+		09B2559012F97BF900E1D08A /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2558E12F97BF900E1D08A /* PuzzleViewController.m */; };
+		09B2559112F97BF900E1D08A /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */; };
+		09B2559212F97BF900E1D08A /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2558E12F97BF900E1D08A /* PuzzleViewController.m */; };
+		09B2559312F97BF900E1D08A /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */; };
+		09B2559412F97BF900E1D08A /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2558E12F97BF900E1D08A /* PuzzleViewController.m */; };
+		09B2559512F97BF900E1D08A /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */; };
+		09B2569312FA97DE00E1D08A /* QuestionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2569212FA97DE00E1D08A /* QuestionParser.m */; };
+		09B2569412FA97DE00E1D08A /* QuestionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2569212FA97DE00E1D08A /* QuestionParser.m */; };
+		09B2569512FA97DE00E1D08A /* QuestionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2569212FA97DE00E1D08A /* QuestionParser.m */; };
+		09B2599112FCE8FF00E1D08A /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2599012FCE8FF00E1D08A /* Game.m */; };
+		09B2599212FCE8FF00E1D08A /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2599012FCE8FF00E1D08A /* Game.m */; };
+		09B2599312FCE8FF00E1D08A /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2599012FCE8FF00E1D08A /* Game.m */; };
+		1D3623260D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09B2540B12F9670700E1D08A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09B2540512F966FF00E1D08A;
+			remoteInfo = TrivaBettingiPhoneUnitTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099C38371303DF4100A160C4 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		099C383B1303E01B00A160C4 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		099C38CB1307D94400A160C4 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		099C38CD1307D94400A160C4 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		099C38CE1307D94400A160C4 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		099C38CF1307D94400A160C4 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		099C38D01307D94400A160C4 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		099C38D11307D94400A160C4 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		099C38D21307D94400A160C4 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		099C38D31307D94400A160C4 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		099C38D41307D94400A160C4 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		099C38D51307D94400A160C4 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		099C38D61307D94400A160C4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		099C38D71307D94400A160C4 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		099C38D81307D94400A160C4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		099C38D91307D94400A160C4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		099C38DA1307D94400A160C4 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		099C38DB1307D94400A160C4 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		099C38DC1307D94400A160C4 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		099C38DD1307D94400A160C4 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		099C38DE1307D94400A160C4 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		099C38DF1307D94400A160C4 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		099C38E01307D94400A160C4 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		099C38E11307D94400A160C4 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		099C38E21307D94400A160C4 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		099C3A79130DFBEC00A160C4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		099C3A7D130DFBF500A160C4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		099C3A81130DFDFE00A160C4 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		099C3A98130DFF2C00A160C4 /* answer-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "answer-pressed.png"; sourceTree = "<group>"; };
+		099C3A9C130DFF9300A160C4 /* answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answer.png; sourceTree = "<group>"; };
+		099C3AA0130E004D00A160C4 /* arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-down.png"; sourceTree = "<group>"; };
+		099C3AA4130E00B100A160C4 /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-up.png"; sourceTree = "<group>"; };
+		099C3AAE130E024E00A160C4 /* puzzle-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "puzzle-button.png"; sourceTree = "<group>"; };
+		099C3AB2130E031800A160C4 /* counter-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "counter-background.png"; sourceTree = "<group>"; };
+		09B252E012F8206200E1D08A /* Board1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Board1.jpg; sourceTree = "<group>"; };
+		09B252E612F82BF500E1D08A /* grey-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-button.png"; sourceTree = "<group>"; };
+		09B2536B12F956C300E1D08A /* PersistentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentData.h; sourceTree = "<group>"; };
+		09B2536C12F956C300E1D08A /* PersistentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistentData.m; sourceTree = "<group>"; };
+		09B2536D12F956C300E1D08A /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		09B2536E12F956C300E1D08A /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		09B2537912F9570B00E1D08A /* TriviaBetting.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = TriviaBetting.xcdatamodel; sourceTree = "<group>"; };
+		09B2537F12F957FC00E1D08A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		09B2539D12F95A6100E1D08A /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = ../Question.h; sourceTree = "<group>"; };
+		09B2539E12F95A6100E1D08A /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = ../Question.m; sourceTree = "<group>"; };
+		09B2539F12F95A6100E1D08A /* Puzzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Puzzle.h; path = ../Puzzle.h; sourceTree = "<group>"; };
+		09B253A012F95A6100E1D08A /* Puzzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Puzzle.m; path = ../Puzzle.m; sourceTree = "<group>"; };
+		09B253A112F95A6100E1D08A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		09B253A212F95A6100E1D08A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
+		09B253C212F95FDD00E1D08A /* PuzzleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleParser.h; sourceTree = "<group>"; };
+		09B253C312F95FDD00E1D08A /* PuzzleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleParser.m; sourceTree = "<group>"; };
+		09B253FE12F966DE00E1D08A /* TriviaBettingiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaBettingiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B2540012F966DE00E1D08A /* TriviaBettingiPhone-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriviaBettingiPhone-Info copy.plist"; sourceTree = "<group>"; };
+		09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrivaBettingiPhoneUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B2540712F966FF00E1D08A /* TrivaBettingiPhoneUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrivaBettingiPhoneUnitTest-Info.plist"; sourceTree = "<group>"; };
+		09B254F212F9681700E1D08A /* PuzzleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleTest.h; sourceTree = "<group>"; };
+		09B254F312F9681700E1D08A /* PuzzleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleTest.m; sourceTree = "<group>"; };
+		09B2553A12F96F8800E1D08A /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		09B2553E12F9701500E1D08A /* PuzzlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzlesViewController.h; sourceTree = "<group>"; };
+		09B2553F12F9701500E1D08A /* PuzzlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzlesViewController.m; sourceTree = "<group>"; };
+		09B2554012F9701500E1D08A /* PuzzlesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PuzzlesViewController.xib; path = Classes/PuzzlesViewController.xib; sourceTree = "<group>"; };
+		09B2557412F9750F00E1D08A /* slider-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-bg.png"; sourceTree = "<group>"; };
+		09B2558D12F97BF900E1D08A /* PuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleViewController.h; sourceTree = "<group>"; };
+		09B2558E12F97BF900E1D08A /* PuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleViewController.m; sourceTree = "<group>"; };
+		09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PuzzleViewController.xib; path = Classes/PuzzleViewController.xib; sourceTree = "<group>"; };
+		09B2569112FA97DE00E1D08A /* QuestionParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionParser.h; sourceTree = "<group>"; };
+		09B2569212FA97DE00E1D08A /* QuestionParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionParser.m; sourceTree = "<group>"; };
+		09B2598F12FCE8FF00E1D08A /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		09B2599012FCE8FF00E1D08A /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaBettingiPhoneAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaBettingiPhoneAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TriviaBetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaBetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TriviaBettingiPhoneViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* TriviaBettingiPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaBettingiPhoneViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaBettingiPhoneViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TriviaBettingiPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaBettingiPhone_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TriviaBettingiPhone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TriviaBettingiPhone-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09B253F612F966DE00E1D08A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B253F712F966DE00E1D08A /* Foundation.framework in Frameworks */,
+				09B253F812F966DE00E1D08A /* UIKit.framework in Frameworks */,
+				09B253F912F966DE00E1D08A /* CoreGraphics.framework in Frameworks */,
+				09B253FA12F966DE00E1D08A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B2540312F966FF00E1D08A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B254D812F9672A00E1D08A /* CoreData.framework in Frameworks */,
+				09B254D912F9672A00E1D08A /* UIKit.framework in Frameworks */,
+				09B254DA12F9672A00E1D08A /* Foundation.framework in Frameworks */,
+				09B254DB12F9672A00E1D08A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				09B2538012F957FC00E1D08A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				099C38CA1307D94400A160C4 /* FBConnect */,
+				09B2537812F956D800E1D08A /* DataModel */,
+				1D3623240D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */,
+				09B2557812F9783800E1D08A /* ViewControllers */,
+				09B253C512F95FEE00E1D08A /* Parsers */,
+				09B254F512F9682000E1D08A /* UnitTests */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		099C38CA1307D94400A160C4 /* FBConnect */ = {
+			isa = PBXGroup;
+			children = (
+				099C38CB1307D94400A160C4 /* FBDialog.bundle */,
+				099C38CC1307D94400A160C4 /* JSON */,
+				099C38DA1307D94400A160C4 /* FBConnect.h */,
+				099C38DB1307D94400A160C4 /* FBRequest.h */,
+				099C38DC1307D94400A160C4 /* FBRequest.m */,
+				099C38DD1307D94400A160C4 /* Facebook.m */,
+				099C38DE1307D94400A160C4 /* Facebook.h */,
+				099C38DF1307D94400A160C4 /* FBLoginDialog.h */,
+				099C38E01307D94400A160C4 /* FBLoginDialog.m */,
+				099C38E11307D94400A160C4 /* FBDialog.h */,
+				099C38E21307D94400A160C4 /* FBDialog.m */,
+			);
+			name = FBConnect;
+			sourceTree = "<group>";
+		};
+		099C38CC1307D94400A160C4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				099C38CD1307D94400A160C4 /* JSON.h */,
+				099C38CE1307D94400A160C4 /* NSObject+SBJSON.h */,
+				099C38CF1307D94400A160C4 /* NSObject+SBJSON.m */,
+				099C38D01307D94400A160C4 /* NSString+SBJSON.h */,
+				099C38D11307D94400A160C4 /* NSString+SBJSON.m */,
+				099C38D21307D94400A160C4 /* SBJSON.h */,
+				099C38D31307D94400A160C4 /* SBJSON.m */,
+				099C38D41307D94400A160C4 /* SBJsonBase.h */,
+				099C38D51307D94400A160C4 /* SBJsonBase.m */,
+				099C38D61307D94400A160C4 /* SBJsonParser.h */,
+				099C38D71307D94400A160C4 /* SBJsonParser.m */,
+				099C38D81307D94400A160C4 /* SBJsonWriter.h */,
+				099C38D91307D94400A160C4 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		09B2537812F956D800E1D08A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				09B2536B12F956C300E1D08A /* PersistentData.h */,
+				09B2536C12F956C300E1D08A /* PersistentData.m */,
+				09B2536D12F956C300E1D08A /* DataModel.h */,
+				09B2536E12F956C300E1D08A /* DataModel.m */,
+				09B2539D12F95A6100E1D08A /* Question.h */,
+				09B2539E12F95A6100E1D08A /* Question.m */,
+				09B2539F12F95A6100E1D08A /* Puzzle.h */,
+				09B253A012F95A6100E1D08A /* Puzzle.m */,
+				09B253A112F95A6100E1D08A /* User.h */,
+				09B253A212F95A6100E1D08A /* User.m */,
+				09B2598F12FCE8FF00E1D08A /* Game.h */,
+				09B2599012FCE8FF00E1D08A /* Game.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		09B253C512F95FEE00E1D08A /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				09B253C212F95FDD00E1D08A /* PuzzleParser.h */,
+				09B253C312F95FDD00E1D08A /* PuzzleParser.m */,
+				09B2569112FA97DE00E1D08A /* QuestionParser.h */,
+				09B2569212FA97DE00E1D08A /* QuestionParser.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		09B254F512F9682000E1D08A /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				09B254F212F9681700E1D08A /* PuzzleTest.h */,
+				09B254F312F9681700E1D08A /* PuzzleTest.m */,
+			);
+			name = UnitTests;
+			sourceTree = "<group>";
+		};
+		09B2557812F9783800E1D08A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D7ACF60DDB3853001CB0EB /* TriviaBettingiPhoneViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m */,
+				09B2553E12F9701500E1D08A /* PuzzlesViewController.h */,
+				09B2553F12F9701500E1D08A /* PuzzlesViewController.m */,
+				09B2558D12F97BF900E1D08A /* PuzzleViewController.h */,
+				09B2558E12F97BF900E1D08A /* PuzzleViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TriviaBetting.app */,
+				09B253FE12F966DE00E1D08A /* TriviaBettingiPhone.app */,
+				09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				09B2540712F966FF00E1D08A /* TrivaBettingiPhoneUnitTest-Info.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TriviaBettingiPhone_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */,
+				09B2554012F9701500E1D08A /* PuzzlesViewController.xib */,
+				2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TriviaBettingiPhone-Info.plist */,
+				099C3AB2130E031800A160C4 /* counter-background.png */,
+				099C3AAE130E024E00A160C4 /* puzzle-button.png */,
+				099C3A9C130DFF9300A160C4 /* answer.png */,
+				099C3A98130DFF2C00A160C4 /* answer-pressed.png */,
+				099C3A81130DFDFE00A160C4 /* button.png */,
+				099C3A79130DFBEC00A160C4 /* icon.png */,
+				099C3A7D130DFBF500A160C4 /* background.png */,
+				099C383B1303E01B00A160C4 /* twitter.png */,
+				099C38371303DF4100A160C4 /* facebook.png */,
+				09B2557412F9750F00E1D08A /* slider-bg.png */,
+				09B2553A12F96F8800E1D08A /* question.png */,
+				09B252E012F8206200E1D08A /* Board1.jpg */,
+				099C3AA4130E00B100A160C4 /* arrow-up.png */,
+				099C3AA0130E004D00A160C4 /* arrow-down.png */,
+				09B252E612F82BF500E1D08A /* grey-button.png */,
+				09B2537912F9570B00E1D08A /* TriviaBetting.xcdatamodel */,
+				09B2540012F966DE00E1D08A /* TriviaBettingiPhone-Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B2537F12F957FC00E1D08A /* CoreData.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09B253E212F966DE00E1D08A /* TriviaBettingiPhoneTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B253FB12F966DE00E1D08A /* Build configuration list for PBXNativeTarget "TriviaBettingiPhoneTest" */;
+			buildPhases = (
+				09B253E312F966DE00E1D08A /* Resources */,
+				09B253EA12F966DE00E1D08A /* Sources */,
+				09B253F612F966DE00E1D08A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09B2540C12F9670700E1D08A /* PBXTargetDependency */,
+			);
+			name = TriviaBettingiPhoneTest;
+			productName = TriviaBettingiPhone;
+			productReference = 09B253FE12F966DE00E1D08A /* TriviaBettingiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09B2540512F966FF00E1D08A /* TrivaBettingiPhoneUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B2540A12F9670000E1D08A /* Build configuration list for PBXNativeTarget "TrivaBettingiPhoneUnitTest" */;
+			buildPhases = (
+				09B2540112F966FF00E1D08A /* Resources */,
+				09B2540212F966FF00E1D08A /* Sources */,
+				09B2540312F966FF00E1D08A /* Frameworks */,
+				09B2540412F966FF00E1D08A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrivaBettingiPhoneUnitTest;
+			productName = TrivaBettingiPhoneUnitTest;
+			productReference = 09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1D6058900D05DD3D006BFB54 /* TriviaBettingiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TriviaBettingiPhone" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TriviaBettingiPhone;
+			productName = TriviaBettingiPhone;
+			productReference = 1D6058910D05DD3D006BFB54 /* TriviaBetting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TriviaBettingiPhone" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TriviaBettingiPhone */,
+				09B253E212F966DE00E1D08A /* TriviaBettingiPhoneTest */,
+				09B2540512F966FF00E1D08A /* TrivaBettingiPhoneUnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09B253E312F966DE00E1D08A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B254EF12F9676B00E1D08A /* TrivaBettingiPhoneUnitTest.octest in Resources */,
+				09B253E412F966DE00E1D08A /* MainWindow.xib in Resources */,
+				09B253E512F966DE00E1D08A /* TriviaBettingiPhoneViewController.xib in Resources */,
+				09B253E612F966DE00E1D08A /* Board1.jpg in Resources */,
+				09B253E912F966DE00E1D08A /* grey-button.png in Resources */,
+				09B2553D12F96F8800E1D08A /* question.png in Resources */,
+				09B2554612F9701500E1D08A /* PuzzlesViewController.xib in Resources */,
+				09B2557712F9750F00E1D08A /* slider-bg.png in Resources */,
+				09B2559512F97BF900E1D08A /* PuzzleViewController.xib in Resources */,
+				099C38381303DF4100A160C4 /* facebook.png in Resources */,
+				099C383C1303E01B00A160C4 /* twitter.png in Resources */,
+				099C38E31307D94400A160C4 /* FBDialog.bundle in Resources */,
+				099C3A7A130DFBEC00A160C4 /* icon.png in Resources */,
+				099C3A7E130DFBF500A160C4 /* background.png in Resources */,
+				099C3A82130DFDFE00A160C4 /* button.png in Resources */,
+				099C3A99130DFF2C00A160C4 /* answer-pressed.png in Resources */,
+				099C3A9D130DFF9300A160C4 /* answer.png in Resources */,
+				099C3AA1130E004D00A160C4 /* arrow-down.png in Resources */,
+				099C3AA5130E00B100A160C4 /* arrow-up.png in Resources */,
+				099C3AAF130E024E00A160C4 /* puzzle-button.png in Resources */,
+				099C3AB3130E031800A160C4 /* counter-background.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B2540112F966FF00E1D08A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B254DC12F9673500E1D08A /* TriviaBettingiPhoneViewController.xib in Resources */,
+				09B254DD12F9673500E1D08A /* MainWindow.xib in Resources */,
+				09B254DE12F9673500E1D08A /* TriviaBettingiPhone-Info.plist in Resources */,
+				09B254DF12F9673500E1D08A /* Board1.jpg in Resources */,
+				09B254E212F9673500E1D08A /* grey-button.png in Resources */,
+				09B254E412F9673500E1D08A /* TriviaBettingiPhone-Info copy.plist in Resources */,
+				09B2553B12F96F8800E1D08A /* question.png in Resources */,
+				09B2554212F9701500E1D08A /* PuzzlesViewController.xib in Resources */,
+				09B2557512F9750F00E1D08A /* slider-bg.png in Resources */,
+				09B2559112F97BF900E1D08A /* PuzzleViewController.xib in Resources */,
+				099C38391303DF4100A160C4 /* facebook.png in Resources */,
+				099C383D1303E01B00A160C4 /* twitter.png in Resources */,
+				099C38EE1307D94400A160C4 /* FBDialog.bundle in Resources */,
+				099C3A7B130DFBEC00A160C4 /* icon.png in Resources */,
+				099C3A7F130DFBF500A160C4 /* background.png in Resources */,
+				099C3A83130DFDFE00A160C4 /* button.png in Resources */,
+				099C3A9A130DFF2C00A160C4 /* answer-pressed.png in Resources */,
+				099C3A9E130DFF9300A160C4 /* answer.png in Resources */,
+				099C3AA2130E004D00A160C4 /* arrow-down.png in Resources */,
+				099C3AA6130E00B100A160C4 /* arrow-up.png in Resources */,
+				099C3AB0130E024E00A160C4 /* puzzle-button.png in Resources */,
+				099C3AB4130E031800A160C4 /* counter-background.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib in Resources */,
+				09B252E112F8206200E1D08A /* Board1.jpg in Resources */,
+				09B252E712F82BF500E1D08A /* grey-button.png in Resources */,
+				09B2553C12F96F8800E1D08A /* question.png in Resources */,
+				09B2554412F9701500E1D08A /* PuzzlesViewController.xib in Resources */,
+				09B2557612F9750F00E1D08A /* slider-bg.png in Resources */,
+				09B2559312F97BF900E1D08A /* PuzzleViewController.xib in Resources */,
+				099C383A1303DF4100A160C4 /* facebook.png in Resources */,
+				099C383E1303E01B00A160C4 /* twitter.png in Resources */,
+				099C38F91307D94400A160C4 /* FBDialog.bundle in Resources */,
+				099C3A7C130DFBEC00A160C4 /* icon.png in Resources */,
+				099C3A80130DFBF500A160C4 /* background.png in Resources */,
+				099C3A84130DFDFE00A160C4 /* button.png in Resources */,
+				099C3A9B130DFF2C00A160C4 /* answer-pressed.png in Resources */,
+				099C3A9F130DFF9300A160C4 /* answer.png in Resources */,
+				099C3AA3130E004D00A160C4 /* arrow-down.png in Resources */,
+				099C3AA7130E00B100A160C4 /* arrow-up.png in Resources */,
+				099C3AB1130E024E00A160C4 /* puzzle-button.png in Resources */,
+				099C3AB5130E031800A160C4 /* counter-background.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B2540412F966FF00E1D08A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09B253EA12F966DE00E1D08A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B253EB12F966DE00E1D08A /* main.m in Sources */,
+				09B253EC12F966DE00E1D08A /* TriviaBettingiPhoneAppDelegate.m in Sources */,
+				09B253ED12F966DE00E1D08A /* TriviaBettingiPhoneViewController.m in Sources */,
+				09B253EE12F966DE00E1D08A /* PersistentData.m in Sources */,
+				09B253EF12F966DE00E1D08A /* DataModel.m in Sources */,
+				09B253F012F966DE00E1D08A /* TriviaBetting.xcdatamodel in Sources */,
+				09B253F212F966DE00E1D08A /* Question.m in Sources */,
+				09B253F312F966DE00E1D08A /* Puzzle.m in Sources */,
+				09B253F412F966DE00E1D08A /* User.m in Sources */,
+				09B253F512F966DE00E1D08A /* PuzzleParser.m in Sources */,
+				09B2554512F9701500E1D08A /* PuzzlesViewController.m in Sources */,
+				09B2559412F97BF900E1D08A /* PuzzleViewController.m in Sources */,
+				09B2569512FA97DE00E1D08A /* QuestionParser.m in Sources */,
+				09B2599112FCE8FF00E1D08A /* Game.m in Sources */,
+				099C38E41307D94400A160C4 /* NSObject+SBJSON.m in Sources */,
+				099C38E51307D94400A160C4 /* NSString+SBJSON.m in Sources */,
+				099C38E61307D94400A160C4 /* SBJSON.m in Sources */,
+				099C38E71307D94400A160C4 /* SBJsonBase.m in Sources */,
+				099C38E81307D94400A160C4 /* SBJsonParser.m in Sources */,
+				099C38E91307D94400A160C4 /* SBJsonWriter.m in Sources */,
+				099C38EA1307D94400A160C4 /* FBRequest.m in Sources */,
+				099C38EB1307D94400A160C4 /* Facebook.m in Sources */,
+				099C38EC1307D94400A160C4 /* FBLoginDialog.m in Sources */,
+				099C38ED1307D94400A160C4 /* FBDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09B2540212F966FF00E1D08A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B254E312F9673500E1D08A /* TriviaBetting.xcdatamodel in Sources */,
+				09B254E512F9674F00E1D08A /* PersistentData.m in Sources */,
+				09B254E612F9674F00E1D08A /* DataModel.m in Sources */,
+				09B254E812F9674F00E1D08A /* Question.m in Sources */,
+				09B254E912F9674F00E1D08A /* Puzzle.m in Sources */,
+				09B254EA12F9674F00E1D08A /* User.m in Sources */,
+				09B254EB12F9674F00E1D08A /* TriviaBettingiPhoneAppDelegate.m in Sources */,
+				09B254EC12F9674F00E1D08A /* TriviaBettingiPhoneViewController.m in Sources */,
+				09B254ED12F9674F00E1D08A /* PuzzleParser.m in Sources */,
+				09B254F412F9681700E1D08A /* PuzzleTest.m in Sources */,
+				09B2554112F9701500E1D08A /* PuzzlesViewController.m in Sources */,
+				09B2559012F97BF900E1D08A /* PuzzleViewController.m in Sources */,
+				09B2569312FA97DE00E1D08A /* QuestionParser.m in Sources */,
+				09B2599212FCE8FF00E1D08A /* Game.m in Sources */,
+				099C38EF1307D94400A160C4 /* NSObject+SBJSON.m in Sources */,
+				099C38F01307D94400A160C4 /* NSString+SBJSON.m in Sources */,
+				099C38F11307D94400A160C4 /* SBJSON.m in Sources */,
+				099C38F21307D94400A160C4 /* SBJsonBase.m in Sources */,
+				099C38F31307D94400A160C4 /* SBJsonParser.m in Sources */,
+				099C38F41307D94400A160C4 /* SBJsonWriter.m in Sources */,
+				099C38F51307D94400A160C4 /* FBRequest.m in Sources */,
+				099C38F61307D94400A160C4 /* Facebook.m in Sources */,
+				099C38F71307D94400A160C4 /* FBLoginDialog.m in Sources */,
+				099C38F81307D94400A160C4 /* FBDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TriviaBettingiPhoneViewController.m in Sources */,
+				09B2536F12F956C300E1D08A /* PersistentData.m in Sources */,
+				09B2537012F956C300E1D08A /* DataModel.m in Sources */,
+				09B2537A12F9570B00E1D08A /* TriviaBetting.xcdatamodel in Sources */,
+				09B253A412F95A6100E1D08A /* Question.m in Sources */,
+				09B253A512F95A6100E1D08A /* Puzzle.m in Sources */,
+				09B253A612F95A6100E1D08A /* User.m in Sources */,
+				09B253C412F95FDD00E1D08A /* PuzzleParser.m in Sources */,
+				09B2554312F9701500E1D08A /* PuzzlesViewController.m in Sources */,
+				09B2559212F97BF900E1D08A /* PuzzleViewController.m in Sources */,
+				09B2569412FA97DE00E1D08A /* QuestionParser.m in Sources */,
+				09B2599312FCE8FF00E1D08A /* Game.m in Sources */,
+				099C38FA1307D94400A160C4 /* NSObject+SBJSON.m in Sources */,
+				099C38FB1307D94400A160C4 /* NSString+SBJSON.m in Sources */,
+				099C38FC1307D94400A160C4 /* SBJSON.m in Sources */,
+				099C38FD1307D94400A160C4 /* SBJsonBase.m in Sources */,
+				099C38FE1307D94400A160C4 /* SBJsonParser.m in Sources */,
+				099C38FF1307D94400A160C4 /* SBJsonWriter.m in Sources */,
+				099C39001307D94400A160C4 /* FBRequest.m in Sources */,
+				099C39011307D94400A160C4 /* Facebook.m in Sources */,
+				099C39021307D94400A160C4 /* FBLoginDialog.m in Sources */,
+				099C39031307D94400A160C4 /* FBDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09B2540C12F9670700E1D08A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09B2540512F966FF00E1D08A /* TrivaBettingiPhoneUnitTest */;
+			targetProxy = 09B2540B12F9670700E1D08A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09B253FC12F966DE00E1D08A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
+				INFOPLIST_FILE = "TriviaBettingiPhone-Info copy.plist";
+				PRODUCT_NAME = TriviaBettingiPhone;
+			};
+			name = Debug;
+		};
+		09B253FD12F966DE00E1D08A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
+				INFOPLIST_FILE = "TriviaBettingiPhone-Info copy.plist";
+				PRODUCT_NAME = TriviaBettingiPhone;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09B2540812F9670000E1D08A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "TrivaBettingiPhoneUnitTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TrivaBettingiPhoneUnitTest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		09B2540912F9670000E1D08A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "TrivaBettingiPhoneUnitTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TrivaBettingiPhoneUnitTest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
+				INFOPLIST_FILE = "TriviaBettingiPhone-Info.plist";
+				PRODUCT_NAME = TriviaBetting;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
+				INFOPLIST_FILE = "TriviaBettingiPhone-Info.plist";
+				PRODUCT_NAME = TriviaBettingiPhone;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09B253FB12F966DE00E1D08A /* Build configuration list for PBXNativeTarget "TriviaBettingiPhoneTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B253FC12F966DE00E1D08A /* Debug */,
+				09B253FD12F966DE00E1D08A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B2540A12F9670000E1D08A /* Build configuration list for PBXNativeTarget "TrivaBettingiPhoneUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B2540812F9670000E1D08A /* Debug */,
+				09B2540912F9670000E1D08A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TriviaBettingiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TriviaBettingiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
