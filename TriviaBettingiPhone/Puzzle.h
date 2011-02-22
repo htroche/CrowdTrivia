@@ -22,14 +22,15 @@
 @property (nonatomic, retain) NSString * puzzleDescription;
 @property (nonatomic, retain) NSString * serverID;
 @property (nonatomic, retain) NSDate * lastPlayed;
+@property (nonatomic, retain) NSDate * lastUpdated;
 @property (nonatomic, retain) NSSet* questions;
 
 
 + (Puzzle *) getNewPuzzle;
-+ (NSArray *) getAllPuzzles;
-+ (void) getServerPuzzles;
++ (NSArray *) getAllPuzzles:(NSDate *) since;
++ (void) getServerPuzzles:(id) d;
 
-- (void) getServerQuestions;
+- (void) getServerQuestions:(id) d;
 
 
 @end

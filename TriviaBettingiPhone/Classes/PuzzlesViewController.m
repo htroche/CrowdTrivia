@@ -10,6 +10,8 @@
 #import "PuzzleViewController.h"
 #import "Game.h"
 #import "Question.h"
+#import "MorePuzzlesViewController.h"
+#import "Reachability.h"
 
 @implementation PuzzlesViewController
 
@@ -40,15 +42,7 @@
 */
 
 - (void) setupPage {
-	puzzles = [Puzzle getAllPuzzles];
-	if(puzzles == nil || [puzzles count] == 0) {
-		[Puzzle getServerPuzzles];
-		puzzles = [Puzzle getAllPuzzles];
-		for(int n = 0; n < [puzzles count]; n++) {
-			Puzzle *p = [puzzles objectAtIndex:n];
-			[p getServerQuestions];
-		}
-	}
+	puzzles = [Puzzle getAllPuzzles:nil];
 	[puzzles retain];
 	scrollView.delegate = self;
 	
@@ -81,7 +75,20 @@
 		cx += scrollView.frame.size.width;
 	}
 	
-	pageControl.numberOfPages = nPuzzle;
+	MorePuzzlesViewController *controller = [[MorePuzzlesViewController alloc] init];
+	CGRect rect = initialRect;
+	//rect.size.height = height;
+	//rect.size.width = width;
+	rect.origin.x = ((scrollView.frame.size.width - width) / 2) + cx;
+	rect.origin.y = ((scrollView.frame.size.height - height) / 2);
+	controller.view.frame = rect;
+	controller.view.userInteractionEnabled = YES;
+	[scrollView addSubview:controller.view];
+	[controller release];
+	
+	cx += scrollView.frame.size.width;
+	
+	pageControl.numberOfPages = (nPuzzle + 1);
 	[scrollView setContentSize:CGSizeMake(cx, [scrollView bounds].size.height)];
 	
 }
@@ -103,6 +110,7 @@
     CGFloat pageWidth = sender.frame.size.width;
     int page = floor((sender.contentOffset.x - pageWidth / 2) / pageWidth) + 1;	
     pageControl.currentPage = page;
+	[self setupButtonLabel];
 }
 
 - (void) pageChanged:(id) sender {
@@ -114,6 +122,15 @@
     frame.origin.x = frame.size.width * pageControl.currentPage;
     frame.origin.y = 0;
     [scrollView scrollRectToVisible:frame animated:animated];
+	[self setupButtonLabel];
+}
+
+- (void) setupButtonLabel {
+	if((pageControl.currentPage + 1) == pageControl.numberOfPages) {
+		buttonLabel.text = @"Get more";
+	} else {
+		buttonLabel.text = @"Play";
+	}
 }
 
 - (IBAction) closeScreen {
@@ -121,6 +138,59 @@
 }
 
 - (IBAction) playButtonPressed:(id) sender {
+	if((pageControl.currentPage + 1) == pageControl.numberOfPages) {
+		if([self hasInternetConnection]) {
+			[[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"lastUpdated"];
+			[[NSUserDefaults standardUserDefaults] synchronize];
+			[activityIndicator startAnimating];
+			[Puzzle getServerPuzzles:self];
+		} else {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet" message:@"You need an internet connection to get more quizzes." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			[alert show];
+		}
+		return;
+	}
+	Game *game = [Game getGame];
+	Puzzle *p = [puzzles objectAtIndex:pageControl.currentPage];
+	p.lastPlayed = [NSDate date];
+	game.puzzle = p;
+	NSArray *questions = [p.questions allObjects];
+	if([questions count] == 0) {
+		[activityIndicator startAnimating];
+		[p getServerQuestions:self];
+		return;
+	} else {
+		game.question = [questions objectAtIndex:0];
+		game.timeLeft = [NSNumber numberWithInt:30];
+		game.questionIndex = [NSNumber numberWithInt:0];
+		game.credits = [NSNumber numberWithInt:0];
+		NSError *error;
+		[game save:error];
+		[self closeScreen];
+	}
+}
+
+- (void)alertView:(UIAlertView  *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	[alertView release];
+}
+
+- (void) setStatusMessage:(NSString *) message {
+	statusLabel.hidden = NO;
+	statusLabel.text = message;
+}
+
+- (void) finishedPuzzles {
+	NSDate *since = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastUpdated"];
+	puzzles = [Puzzle getAllPuzzles:since];
+	statusLabel.hidden = YES;
+	[activityIndicator stopAnimating];
+	[self setupPage];
+	
+}
+
+- (void) finishedQuestions {
+	statusLabel.hidden = YES;
+	[activityIndicator stopAnimating];
 	Game *game = [Game getGame];
 	Puzzle *p = [puzzles objectAtIndex:pageControl.currentPage];
 	p.lastPlayed = [NSDate date];
@@ -133,6 +203,15 @@
 	NSError *error;
 	[game save:error];
 	[self closeScreen];
+}
+
+- (void) fetchError {
+	[activityIndicator stopAnimating];
+}
+
+- (BOOL) hasInternetConnection {
+	Reachability *r = [Reachability reachabilityForInternetConnection];
+	return ([r currentReachabilityStatus] != NotReachable);
 }
 
 - (void)dealloc {

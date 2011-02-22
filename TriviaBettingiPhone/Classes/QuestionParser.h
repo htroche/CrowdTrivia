@@ -9,17 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "Question.h"
 #import "Puzzle.h"
+#import "PuzzleParser.h"
 
 @interface QuestionParser : NSObject <NSXMLParserDelegate> {
 	Puzzle *puzzle;
 	Question *currentQuestion;
 	NSString *currentElement;
 	NSString *trimmedString;
+	<PuzzleParserDelegate> delegate;
 }
 
 @property (nonatomic, retain) NSString * currentElement;
 
-- (void) getRemoteQuestions:(Puzzle *) p;
-- (NSData *) getQuestions:(NSError *) error;
+- (void) getRemoteQuestions:(Puzzle *) p delegate:(<PuzzleParserDelegate>) delegate;
+- (void) getQuestions:(NSError *) error;
 
 @end

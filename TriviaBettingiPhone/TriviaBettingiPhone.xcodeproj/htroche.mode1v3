@@ -280,14 +280,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>31</integer>
-									<integer>29</integer>
+									<integer>42</integer>
+									<integer>38</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 369}, {331, 587}}</string>
+							<string>{{0, 201}, {331, 587}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TriviaBettingiPhoneViewController.m</string>
+								<string>PuzzleParser.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,35 +332,24 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TriviaBettingiPhoneViewController.m</string>
+										<string>PuzzleParser.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>099C3B9D130E998500A160C4</string>
+										<string>099C3CD31313E19F00A160C4</string>
 										<key>history</key>
 										<array>
-											<string>09B256A612FA9CB700E1D08A</string>
 											<string>09B256AB12FA9CB700E1D08A</string>
 											<string>09B256B412FA9FA700E1D08A</string>
 											<string>09B2571D12FAB2EF00E1D08A</string>
-											<string>09B2581512FABFDC00E1D08A</string>
 											<string>09B25A7112FD60F100E1D08A</string>
 											<string>09B25A7612FD60F100E1D08A</string>
-											<string>09B25A7712FD60F100E1D08A</string>
 											<string>09B25A7D12FD60F100E1D08A</string>
 											<string>09B25A7E12FD60F100E1D08A</string>
-											<string>09B2619913029E6200E1D08A</string>
-											<string>099C382E1303DD0600A160C4</string>
-											<string>099C38331303DD0600A160C4</string>
-											<string>099C38341303DD0600A160C4</string>
-											<string>099C384B1304BA5300A160C4</string>
-											<string>099C39471307EEA700A160C4</string>
-											<string>099C39481307EEA700A160C4</string>
 											<string>099C394C1307EEA700A160C4</string>
 											<string>099C394F1307EEA700A160C4</string>
 											<string>099C39501307EEA700A160C4</string>
 											<string>099C39681307F1D500A160C4</string>
-											<string>099C396A1307F1D500A160C4</string>
 											<string>099C397E1307F2A900A160C4</string>
 											<string>099C3996130800EE00A160C4</string>
 											<string>099C3997130800EE00A160C4</string>
@@ -383,15 +372,29 @@
 											<string>099C3AE0130E3D7D00A160C4</string>
 											<string>099C3AE1130E3D7D00A160C4</string>
 											<string>099C3B10130E77FA00A160C4</string>
-											<string>099C3B94130E998500A160C4</string>
 											<string>099C3B95130E998500A160C4</string>
 											<string>099C3B96130E998500A160C4</string>
-											<string>099C3B97130E998500A160C4</string>
-											<string>099C3B98130E998500A160C4</string>
-											<string>099C3B99130E998500A160C4</string>
-											<string>099C3B9A130E998500A160C4</string>
-											<string>099C3B9B130E998500A160C4</string>
-											<string>099C3B9C130E998500A160C4</string>
+											<string>099C3BBF1313C07000A160C4</string>
+											<string>099C3BC01313C07000A160C4</string>
+											<string>099C3C421313D41200A160C4</string>
+											<string>099C3C541313D68000A160C4</string>
+											<string>099C3C881313D9BE00A160C4</string>
+											<string>099C3C891313D9BE00A160C4</string>
+											<string>099C3C8A1313D9BE00A160C4</string>
+											<string>099C3CB71313E0B500A160C4</string>
+											<string>099C3CB81313E0B500A160C4</string>
+											<string>099C3CB91313E0B500A160C4</string>
+											<string>099C3CBA1313E0B500A160C4</string>
+											<string>099C3CBB1313E0B500A160C4</string>
+											<string>099C3CBC1313E0B500A160C4</string>
+											<string>099C3CBD1313E0B500A160C4</string>
+											<string>099C3CBE1313E0B500A160C4</string>
+											<string>099C3CBF1313E0B500A160C4</string>
+											<string>099C3CC01313E0B500A160C4</string>
+											<string>099C3CC11313E0B500A160C4</string>
+											<string>099C3CC21313E0B500A160C4</string>
+											<string>099C3CC31313E0B500A160C4</string>
+											<string>099C3CC41313E0B500A160C4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -589,7 +592,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>099C3B9E130E998500A160C4</string>
 		<string>099C3B1D130E77FA00A160C4</string>
 		<string>099C3B1E130E77FA00A160C4</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -619,7 +621,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>TriviaBetting.xcdatamodel</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -636,6 +638,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

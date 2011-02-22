@@ -9,8 +9,8 @@
 #import "Puzzle.h"
 #import "Question.h"
 #import "DataModel.h"
-#import "PuzzleParser.h"
 #import "QuestionParser.h"
+#import "PuzzleParser.h"
 
 @implementation Puzzle 
 
@@ -20,6 +20,8 @@
 @dynamic puzzleDescription;
 @dynamic serverID;
 @dynamic questions;
+@dynamic lastPlayed;
+@dynamic lastUpdated;
 
 + (Puzzle *) getNewPuzzle {
 	Puzzle *puzzle = [NSEntityDescription insertNewObjectForEntityForName:@"Puzzle" 
@@ -27,7 +29,7 @@
 	return puzzle;
 }
 
-+ (NSArray *) getAllPuzzles {
++ (NSArray *) getAllPuzzles:(NSDate *) since {
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
 	NSEntityDescription *entity  = [NSEntityDescription entityForName:@"Puzzle" 
 											   inManagedObjectContext:[[DataModel getInstance] managedObjectContext]];
@@ -36,22 +38,34 @@
 	[request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
 	[sortDescriptor release];
 	
+	if(since != nil) {
+		NSMutableString *predicateString = [NSMutableString stringWithCapacity:10];
+		[predicateString appendString:@"lastUpdated > %@"];
+		NSPredicate *predicate = [NSPredicate predicateWithFormat:
+								  predicateString, since];
+		[request setPredicate:predicate];
+	}
 	
 	NSArray *array = [[[DataModel getInstance] managedObjectContext] executeFetchRequest:request error:nil];
 	return array;
 	
 }
 
-+ (void) getServerPuzzles {
++ (void) getServerPuzzles:(<PuzzleParserDelegate>) d {
 	PuzzleParser *parser = [[PuzzleParser alloc] init];
-	[parser getRemotePuzzles];
+	[parser getRemotePuzzles:d];
 	[parser release];
 }
 
-- (void) getServerQuestions {
+- (void) getServerQuestions:(<PuzzleParserDelegate>) d {
 	QuestionParser *parser = [[QuestionParser alloc] init];
-	[parser getRemoteQuestions:self];
+	[parser getRemoteQuestions:self delegate:d];
 	[parser release];
+}
+
+- (void) save:(NSError *) error {
+	self.lastUpdated = [NSDate date];
+	[super save:error];
 }
 
 @end

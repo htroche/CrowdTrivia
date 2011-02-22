@@ -13,14 +13,9 @@
 
 @synthesize currentElement;
 
-- (void) getRemotePuzzles {
-	NSData *xmlData = [self getPuzzles:nil];
-	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
-	[parser setDelegate:self];
-	[parser setShouldProcessNamespaces:NO];
-    [parser setShouldReportNamespacePrefixes:NO];
-    [parser setShouldResolveExternalEntities:NO];
-    [parser parse];
+- (void) getRemotePuzzles:(<PuzzleParserDelegate>) d {
+	delegate = d;
+	[self getPuzzles:nil];
 }
 
 
@@ -47,8 +42,10 @@
 	NSString *trimmedString = [string stringByTrimmingCharactersInSet:
 							   [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 	if([trimmedString length] >= 1 && currentPuzzle != nil) {
-		if([self.currentElement isEqualToString:@"name"])
+		if([self.currentElement isEqualToString:@"name"]) {
 			currentPuzzle.name = trimmedString;
+			[delegate setStatusMessage:[NSString stringWithFormat:@"Getting %@",trimmedString]];
+		}
 		if([self.currentElement isEqualToString:@"description"])
 			currentPuzzle.puzzleDescription = trimmedString;
 		if([self.currentElement isEqualToString:@"id"])
@@ -56,20 +53,43 @@
 	}
 }
 
-- (NSData *) getPuzzles:(NSError *) error {
-	
+- (void) getPuzzles:(NSError *) error {
+	[delegate setStatusMessage:@"Quizzes are coming..."];
+	NSDate *since = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastUpdated"];
 	NSString *url = @"http://triviabetting.heroku.com/puzzles.xml";
+	if(since != nil) {
+		NSDateFormatter *format = [[NSDateFormatter alloc] init];
+		[format setDateFormat:@"yyyy-MM-ddTHH:mm:ssZ"];
+		[format setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+		NSString *syncDate;
+		syncDate = [format stringFromDate:since];
+		[format release];
+		url = [NSString stringWithFormat:@"http://triviabetting.heroku.com/puzzles.xml?lastUpdated=",syncDate];
+	}
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
 															  cachePolicy:NSURLRequestReloadIgnoringCacheData
 														  timeoutInterval:60.0];
 	[theRequest setHTTPMethod:@"GET"];
 	[theRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-Type"];
-	NSURLResponse *theResponse = NULL;
-	NSData *theResponseData = [NSURLConnection sendSynchronousRequest:theRequest returningResponse:&theResponse error:&error];
-	NSString *s = [[NSString alloc] initWithData:theResponseData encoding:NSUTF8StringEncoding];
-	[s release];
-	return theResponseData;
+	[NSURLConnection connectionWithRequest:theRequest delegate:self];
 	
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError  *)error {
+	[delegate setStatusMessage:@"No internet connection"];
+	//[delegate finishedPuzzles];
+	[delegate fetchError];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData  *)data {
+    [delegate setStatusMessage:@"Getting quizzes..."];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
+	[parser setDelegate:self];
+	[parser setShouldProcessNamespaces:NO];
+    [parser setShouldReportNamespacePrefixes:NO];
+    [parser setShouldResolveExternalEntities:NO];
+    [parser parse];
+	[delegate finishedPuzzles];
 }
 
 @end

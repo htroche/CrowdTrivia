@@ -1,15 +1,15 @@
 //
-//  PuzzleViewController.m
+//  MorePuzzlesViewController.m
 //  TriviaBettingiPhone
 //
-//  Created by Hugo Troche on 2/2/11.
+//  Created by Hugo Troche on 2/22/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "PuzzleViewController.h"
+#import "MorePuzzlesViewController.h"
 
 
-@implementation PuzzleViewController
+@implementation MorePuzzlesViewController
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -22,32 +22,12 @@
 }
 */
 
-- (id) initWithPuzzle:(Puzzle *) p {
-	self = [super init];
-	puzzle = p;
-	return self;
-}
-
-
+/*
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	puzzleName.text = puzzle.name;
-	puzzleDescription.text = puzzle.puzzleDescription;
-	if([puzzle.questions count] > 0) {
-		questionsLabel.text = [NSString stringWithFormat:@"%d Questions", [puzzle.questions count]];
-	} else {
-		questionsLabel.text = @"Not downloaded, will download on first play";
-	}
-	if(puzzle.lastPlayed != nil) {
-		NSDateFormatter *format = [[NSDateFormatter alloc] init];
-		[format setDateFormat:@"MM/dd/YYYY"];
-		lastPlayedLabel.text = [NSString stringWithFormat:@"Last played on %@ Score: %d", [format stringFromDate:puzzle.lastPlayed], [puzzle.creditDelta intValue]];
-		[format release];
-	} else {
-		lastPlayedLabel.text = @"Not played yet";
-	}
 }
-
+*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -68,14 +48,6 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-}
-
-- (IBAction) playPuzzle:(id) sender {
-	
-}
-
-- (void) setPuzzle:(Puzzle *) p {
-	puzzle = p;
 }
 
 

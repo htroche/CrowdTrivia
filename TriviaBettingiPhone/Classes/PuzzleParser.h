@@ -8,14 +8,26 @@
 
 #import "Puzzle.h";
 
+@protocol PuzzleParserDelegate
+
+- (void) setStatusMessage:(NSString *) message;
+- (void) finishedPuzzles;
+- (void) finishedQuestions;
+- (void) fetchError;
+
+@end
+
 @interface PuzzleParser : NSObject <NSXMLParserDelegate> {
 	NSString *currentElement;
 	Puzzle *currentPuzzle;
+	<PuzzleParserDelegate> delegate;
 }
 
 @property (nonatomic, retain) NSString * currentElement;
 
-- (void) getRemotePuzzles;
-- (NSData *) getPuzzles:(NSError *) error;
+- (void) getRemotePuzzles:(<PuzzleParserDelegate>) delegate;
+- (void) getPuzzles:(NSError *) error;
 
 @end
+
+

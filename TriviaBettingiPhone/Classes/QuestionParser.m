@@ -13,31 +13,38 @@
 
 @synthesize currentElement;
 
-- (void) getRemoteQuestions:(Puzzle *) p {
+- (void) getRemoteQuestions:(Puzzle *) p delegate:(<PuzzleParserDelegate>) d {
+	delegate = d;
 	puzzle = p;
-	NSData *xmlData = [self getQuestions:nil];
-	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
-	[parser setDelegate:self];
-	[parser setShouldProcessNamespaces:NO];
-    [parser setShouldReportNamespacePrefixes:NO];
-    [parser setShouldResolveExternalEntities:NO];
-    [parser parse];
-	[parser release];
+	[self getQuestions:nil];
 }
 
-- (NSData *) getQuestions:(NSError *) error {
+- (void) getQuestions:(NSError *) error {
 	NSString *url = [NSString stringWithFormat:@"http://triviabetting.heroku.com/puzzles/%@/questions.xml", puzzle.serverID];
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
 															  cachePolicy:NSURLRequestReloadIgnoringCacheData
 														  timeoutInterval:60.0];
 	[theRequest setHTTPMethod:@"GET"];
 	[theRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-Type"];
-	NSURLResponse *theResponse = NULL;
-	NSData *theResponseData = [NSURLConnection sendSynchronousRequest:theRequest returningResponse:&theResponse error:&error];
-	NSString *s = [[NSString alloc] initWithData:theResponseData encoding:NSUTF8StringEncoding];
-	NSLog(@"response: %@", s);
-	[s release];
-	return theResponseData;
+	[NSURLConnection connectionWithRequest:theRequest delegate:self];
+	
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError  *)error {
+	[delegate setStatusMessage:@"No internet connection"];
+	//[delegate finishedQuestions];
+	[delegate fetchError];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData  *)data {
+    [delegate setStatusMessage:@"Getting questions..."];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
+	[parser setDelegate:self];
+	[parser setShouldProcessNamespaces:NO];
+    [parser setShouldReportNamespacePrefixes:NO];
+    [parser setShouldResolveExternalEntities:NO];
+    [parser parse];
+	[delegate finishedQuestions];
 }
 
 

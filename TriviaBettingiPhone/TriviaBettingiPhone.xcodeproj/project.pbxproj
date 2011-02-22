@@ -73,6 +73,16 @@
 		099C3AB3130E031800A160C4 /* counter-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AB2130E031800A160C4 /* counter-background.png */; };
 		099C3AB4130E031800A160C4 /* counter-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AB2130E031800A160C4 /* counter-background.png */; };
 		099C3AB5130E031800A160C4 /* counter-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C3AB2130E031800A160C4 /* counter-background.png */; };
+		099C3BB81313C06500A160C4 /* MorePuzzlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3BB61313C06500A160C4 /* MorePuzzlesViewController.m */; };
+		099C3BB91313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C3BB71313C06500A160C4 /* MorePuzzlesViewController.xib */; };
+		099C3BBA1313C06500A160C4 /* MorePuzzlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3BB61313C06500A160C4 /* MorePuzzlesViewController.m */; };
+		099C3BBB1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C3BB71313C06500A160C4 /* MorePuzzlesViewController.xib */; };
+		099C3BBC1313C06500A160C4 /* MorePuzzlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3BB61313C06500A160C4 /* MorePuzzlesViewController.m */; };
+		099C3BBD1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C3BB71313C06500A160C4 /* MorePuzzlesViewController.xib */; };
+		099C3C611313D8C200A160C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3C601313D8C200A160C4 /* Reachability.m */; };
+		099C3C621313D8C200A160C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3C601313D8C200A160C4 /* Reachability.m */; };
+		099C3C631313D8C200A160C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3C601313D8C200A160C4 /* Reachability.m */; };
+		099C3C771313D8E000A160C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C3C761313D8E000A160C4 /* SystemConfiguration.framework */; };
 		09B252E112F8206200E1D08A /* Board1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E012F8206200E1D08A /* Board1.jpg */; };
 		09B252E712F82BF500E1D08A /* grey-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E612F82BF500E1D08A /* grey-button.png */; };
 		09B2536F12F956C300E1D08A /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536C12F956C300E1D08A /* PersistentData.m */; };
@@ -201,6 +211,12 @@
 		099C3AA4130E00B100A160C4 /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-up.png"; sourceTree = "<group>"; };
 		099C3AAE130E024E00A160C4 /* puzzle-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "puzzle-button.png"; sourceTree = "<group>"; };
 		099C3AB2130E031800A160C4 /* counter-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "counter-background.png"; sourceTree = "<group>"; };
+		099C3BB51313C06500A160C4 /* MorePuzzlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorePuzzlesViewController.h; sourceTree = "<group>"; };
+		099C3BB61313C06500A160C4 /* MorePuzzlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorePuzzlesViewController.m; sourceTree = "<group>"; };
+		099C3BB71313C06500A160C4 /* MorePuzzlesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MorePuzzlesViewController.xib; path = Classes/MorePuzzlesViewController.xib; sourceTree = "<group>"; };
+		099C3C5F1313D8C200A160C4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		099C3C601313D8C200A160C4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		099C3C761313D8E000A160C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		09B252E012F8206200E1D08A /* Board1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Board1.jpg; sourceTree = "<group>"; };
 		09B252E612F82BF500E1D08A /* grey-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-button.png"; sourceTree = "<group>"; };
 		09B2536B12F956C300E1D08A /* PersistentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentData.h; sourceTree = "<group>"; };
@@ -238,7 +254,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaBettingiPhoneAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaBettingiPhoneAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* TriviaBetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaBetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TriviaBettingiPhoneViewController.xib; sourceTree = "<group>"; };
@@ -281,6 +297,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				09B2538012F957FC00E1D08A /* CoreData.framework in Frameworks */,
+				099C3C771313D8E000A160C4 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +378,8 @@
 		09B253C512F95FEE00E1D08A /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
+				099C3C5F1313D8C200A160C4 /* Reachability.h */,
+				099C3C601313D8C200A160C4 /* Reachability.m */,
 				09B253C212F95FDD00E1D08A /* PuzzleParser.h */,
 				09B253C312F95FDD00E1D08A /* PuzzleParser.m */,
 				09B2569112FA97DE00E1D08A /* QuestionParser.h */,
@@ -387,6 +406,8 @@
 				09B2553F12F9701500E1D08A /* PuzzlesViewController.m */,
 				09B2558D12F97BF900E1D08A /* PuzzleViewController.h */,
 				09B2558E12F97BF900E1D08A /* PuzzleViewController.m */,
+				099C3BB51313C06500A160C4 /* MorePuzzlesViewController.h */,
+				099C3BB61313C06500A160C4 /* MorePuzzlesViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -394,7 +415,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* TriviaBetting.app */,
+				1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */,
 				09B253FE12F966DE00E1D08A /* TriviaBettingiPhone.app */,
 				09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */,
 			);
@@ -426,6 +447,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				099C3BB71313C06500A160C4 /* MorePuzzlesViewController.xib */,
 				09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */,
 				09B2554012F9701500E1D08A /* PuzzlesViewController.xib */,
 				2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */,
@@ -459,6 +481,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				099C3C761313D8E000A160C4 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -516,7 +539,7 @@
 			);
 			name = TriviaBettingiPhone;
 			productName = TriviaBettingiPhone;
-			productReference = 1D6058910D05DD3D006BFB54 /* TriviaBetting.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -571,6 +594,7 @@
 				099C3AA5130E00B100A160C4 /* arrow-up.png in Resources */,
 				099C3AAF130E024E00A160C4 /* puzzle-button.png in Resources */,
 				099C3AB3130E031800A160C4 /* counter-background.png in Resources */,
+				099C3BBB1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +624,7 @@
 				099C3AA6130E00B100A160C4 /* arrow-up.png in Resources */,
 				099C3AB0130E024E00A160C4 /* puzzle-button.png in Resources */,
 				099C3AB4130E031800A160C4 /* counter-background.png in Resources */,
+				099C3BB91313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +652,7 @@
 				099C3AA7130E00B100A160C4 /* arrow-up.png in Resources */,
 				099C3AB1130E024E00A160C4 /* puzzle-button.png in Resources */,
 				099C3AB5130E031800A160C4 /* counter-background.png in Resources */,
+				099C3BBD1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,6 +703,8 @@
 				099C38EB1307D94400A160C4 /* Facebook.m in Sources */,
 				099C38EC1307D94400A160C4 /* FBLoginDialog.m in Sources */,
 				099C38ED1307D94400A160C4 /* FBDialog.m in Sources */,
+				099C3BBA1313C06500A160C4 /* MorePuzzlesViewController.m in Sources */,
+				099C3C621313D8C200A160C4 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +736,8 @@
 				099C38F61307D94400A160C4 /* Facebook.m in Sources */,
 				099C38F71307D94400A160C4 /* FBLoginDialog.m in Sources */,
 				099C38F81307D94400A160C4 /* FBDialog.m in Sources */,
+				099C3BB81313C06500A160C4 /* MorePuzzlesViewController.m in Sources */,
+				099C3C611313D8C200A160C4 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +769,8 @@
 				099C39011307D94400A160C4 /* Facebook.m in Sources */,
 				099C39021307D94400A160C4 /* FBLoginDialog.m in Sources */,
 				099C39031307D94400A160C4 /* FBDialog.m in Sources */,
+				099C3BBC1313C06500A160C4 /* MorePuzzlesViewController.m in Sources */,
+				099C3C631313D8C200A160C4 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,7 +882,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
 				INFOPLIST_FILE = "TriviaBettingiPhone-Info.plist";
-				PRODUCT_NAME = TriviaBetting;
+				PRODUCT_NAME = CrowdTrivia;
 			};
 			name = Debug;
 		};
