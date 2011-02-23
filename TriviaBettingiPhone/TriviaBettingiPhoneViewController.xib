@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="6"/>
+			<integer value="60"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -57,7 +57,7 @@
 					<object class="IBUIImageView" id="16065764">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{228, 44}, {62, 53}}</string>
+						<string key="NSFrame">{{228, 50}, {62, 53}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -69,7 +69,7 @@
 					<object class="IBUIButton" id="769533726">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{34, 50}, {202, 47}}</string>
+						<string key="NSFrame">{{37, 50}, {202, 47}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="630608689">
 							<int key="NSColorSpace">3</int>
@@ -134,7 +134,7 @@
 					<object class="IBUILabel" id="215737267">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{229, 59}, {61, 22}}</string>
+						<string key="NSFrame">{{229, 65}, {61, 22}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -191,7 +191,7 @@
 					<object class="IBUITextView" id="347393626">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{37, 105}, {250, 51}}</string>
+						<string key="NSFrame">{{37, 110}, {250, 46}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="IBUIBackgroundColor" ref="630608689"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -637,15 +637,15 @@
 							<reference ref="814316451"/>
 							<reference ref="173409060"/>
 							<reference ref="214413371"/>
-							<reference ref="769533726"/>
-							<reference ref="16065764"/>
-							<reference ref="215737267"/>
 							<reference ref="651963900"/>
 							<reference ref="881161101"/>
 							<reference ref="347393626"/>
 							<reference ref="403009323"/>
 							<reference ref="70762878"/>
 							<reference ref="102239407"/>
+							<reference ref="16065764"/>
+							<reference ref="215737267"/>
+							<reference ref="769533726"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -816,7 +816,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDZwAAwlgAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDZQAAwqQAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -878,7 +878,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDZgAAwowAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDZAAAwsQAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -886,7 +886,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCCAAAwoYAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCFAAAwr4AAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -936,15 +936,11 @@
 							<string>answer2Pressed:</string>
 							<string>answer3Pressed:</string>
 							<string>answer4Pressed:</string>
-							<string>downBetPressed:</string>
 							<string>facebookPressed:</string>
 							<string>selectCategoryPressed:</string>
-							<string>upBetPressed:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -961,10 +957,8 @@
 							<string>answer2Pressed:</string>
 							<string>answer3Pressed:</string>
 							<string>answer4Pressed:</string>
-							<string>downBetPressed:</string>
 							<string>facebookPressed:</string>
 							<string>selectCategoryPressed:</string>
-							<string>upBetPressed:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -985,19 +979,11 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
-								<string key="name">downBetPressed:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
 								<string key="name">facebookPressed:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">selectCategoryPressed:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">upBetPressed:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>

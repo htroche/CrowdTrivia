@@ -9,9 +9,10 @@
 #define BET_DELTA 100
 #import <UIKit/UIKit.h>
 #import "FBConnect.h"
+#import "AdWhirlDelegateProtocol.h"
 
 @interface TriviaBettingiPhoneViewController : UIViewController <UIActionSheetDelegate,FBRequestDelegate,
-FBDialogDelegate,FBSessionDelegate,UIAlertViewDelegate> {
+FBDialogDelegate,FBSessionDelegate,UIAlertViewDelegate,AdWhirlDelegate> {
 	IBOutlet UIButton *answer1;
 	IBOutlet UIButton *answer2;
 	IBOutlet UIButton *answer3;
@@ -28,6 +29,8 @@ FBDialogDelegate,FBSessionDelegate,UIAlertViewDelegate> {
 	
 	NSTimer *timer;
 	Facebook *facebook;
+	
+	BOOL pauseMode;
 }
 
 @property (nonatomic, retain) Facebook *facebook;
@@ -45,6 +48,7 @@ FBDialogDelegate,FBSessionDelegate,UIAlertViewDelegate> {
 - (void) timeOut;
 - (void) resetBoard;
 - (void) puzzleFinished;
+- (void) pauseGame:(BOOL) pause;
 
 
 @end

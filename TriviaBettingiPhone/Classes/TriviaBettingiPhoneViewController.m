@@ -10,6 +10,7 @@
 #import "PuzzlesViewController.h"
 #import "Game.h"
 #import "Question.h"
+#import "AdWhirlView.h"
 
 static NSString* kAppId = @"136114726451991";
 
@@ -44,6 +45,9 @@ static NSString* kAppId = @"136114726451991";
 		int credits = [game.credits intValue];
 		creditsLabel.text = [NSString stringWithFormat:@"%d", credits];
 	}];
+	AdWhirlView *awView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
+	[self.view addSubview:awView];
+	pauseMode = NO;
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -87,6 +91,8 @@ static NSString* kAppId = @"136114726451991";
 	//[game save:error];
 	PuzzlesViewController *controller = [[PuzzlesViewController alloc] init];
 	[self presentModalViewController:controller animated:YES];
+	AdWhirlView *awView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
+	[controller.view addSubview:awView];
 	[controller release];
 	[timer invalidate];
 }
@@ -190,6 +196,8 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void) downClock:(NSTimer *) t {
+	if(pauseMode)
+		return;
 	int timeLeft = [timerLabel.text intValue];
 	timeLeft--;
 	timerLabel.text = [NSString stringWithFormat:@"%d", timeLeft];
@@ -258,7 +266,7 @@ static NSString* kAppId = @"136114726451991";
 		[message appendFormat:@"\n  %@", game.question.answer3];
 		[message appendFormat:@"\n  %@", game.question.answer4];
 		[params setObject:message forKey:@"message"];
-		[params setObject:@"www.triviabetting.com" forKey:@"link"];
+		[params setObject:@"www.crowdtrivia.com" forKey:@"link"];
 		[params setObject:@"Help me with this question!" forKey:@"description"];
 		[params setObject:@"name" forKey:@"name"];
 		[self.facebook requestWithGraphPath:@"me/feed" andParams:params andHttpMethod:@"POST" andDelegate:self];
@@ -315,6 +323,26 @@ static NSString* kAppId = @"136114726451991";
 	Game *game = [Game getGame];
 	[game resetPuzzle];
 	[alertView release];
+}
+
+- (NSString *)adWhirlApplicationKey {
+	return @"90df21e453734c0fb2ad474b1f2434c7";
+}
+
+- (UIViewController *)viewControllerForPresentingModalView {
+	return self;
+}
+
+- (void)adWhirlWillPresentFullScreenModal {
+	[self pauseGame:YES];
+}
+
+- (void)adWhirlDidDismissFullScreenModal {
+	[self pauseGame:NO];
+}
+
+- (void) pauseGame:(BOOL) pause {
+	pauseMode = pause;
 }
 
 - (void)dealloc {

@@ -83,6 +83,98 @@
 		099C3C621313D8C200A160C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3C601313D8C200A160C4 /* Reachability.m */; };
 		099C3C631313D8C200A160C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3C601313D8C200A160C4 /* Reachability.m */; };
 		099C3C771313D8E000A160C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C3C761313D8E000A160C4 /* SystemConfiguration.framework */; };
+		099C3D051314D13500A160C4 /* AdWhirlAdapterIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CD91314D13500A160C4 /* AdWhirlAdapterIAd.m */; };
+		099C3D061314D13500A160C4 /* AdWhirlAdapterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CDF1314D13500A160C4 /* AdWhirlAdapterCustom.m */; };
+		099C3D071314D13500A160C4 /* AdWhirlAdapterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE11314D13500A160C4 /* AdWhirlAdapterEvent.m */; };
+		099C3D081314D13500A160C4 /* AdWhirlAdapterGeneric.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE31314D13500A160C4 /* AdWhirlAdapterGeneric.m */; };
+		099C3D091314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE51314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m */; };
+		099C3D0A1314D13500A160C4 /* AdWhirlAdNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE61314D13500A160C4 /* AdWhirlAdNetworkAdapter.m */; };
+		099C3D0B1314D13500A160C4 /* AdWhirlAdNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE81314D13500A160C4 /* AdWhirlAdNetworkConfig.m */; };
+		099C3D0C1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEA1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m */; };
+		099C3D0D1314D13500A160C4 /* AdWhirlClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEC1314D13500A160C4 /* AdWhirlClassWrapper.m */; };
+		099C3D0E1314D13500A160C4 /* AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEE1314D13500A160C4 /* AdWhirlConfig.m */; };
+		099C3D0F1314D13500A160C4 /* AdWhirlConfigStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF01314D13500A160C4 /* AdWhirlConfigStore.m */; };
+		099C3D101314D13500A160C4 /* AdWhirlCustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF21314D13500A160C4 /* AdWhirlCustomAdView.m */; };
+		099C3D111314D13500A160C4 /* AdWhirlError.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF41314D13500A160C4 /* AdWhirlError.m */; };
+		099C3D121314D13500A160C4 /* AdWhirlLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF61314D13500A160C4 /* AdWhirlLog.m */; };
+		099C3D131314D13500A160C4 /* AdWhirlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF81314D13500A160C4 /* AdWhirlView.m */; };
+		099C3D141314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C3CF91314D13500A160C4 /* AdWhirlWebBrowser.xib */; };
+		099C3D151314D13500A160C4 /* AdWhirlWebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFB1314D13500A160C4 /* AdWhirlWebBrowserController.m */; };
+		099C3D161314D13500A160C4 /* ARRollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFC1314D13500A160C4 /* ARRollerView.m */; };
+		099C3D171314D13500A160C4 /* AWNetworkReachabilityWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFF1314D13500A160C4 /* AWNetworkReachabilityWrapper.m */; };
+		099C3D181314D13500A160C4 /* UIColor+AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3D011314D13500A160C4 /* UIColor+AdWhirlConfig.m */; };
+		099C3D191314D13500A160C4 /* AdWhirlAdapterIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CD91314D13500A160C4 /* AdWhirlAdapterIAd.m */; };
+		099C3D1A1314D13500A160C4 /* AdWhirlAdapterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CDF1314D13500A160C4 /* AdWhirlAdapterCustom.m */; };
+		099C3D1B1314D13500A160C4 /* AdWhirlAdapterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE11314D13500A160C4 /* AdWhirlAdapterEvent.m */; };
+		099C3D1C1314D13500A160C4 /* AdWhirlAdapterGeneric.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE31314D13500A160C4 /* AdWhirlAdapterGeneric.m */; };
+		099C3D1D1314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE51314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m */; };
+		099C3D1E1314D13500A160C4 /* AdWhirlAdNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE61314D13500A160C4 /* AdWhirlAdNetworkAdapter.m */; };
+		099C3D1F1314D13500A160C4 /* AdWhirlAdNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE81314D13500A160C4 /* AdWhirlAdNetworkConfig.m */; };
+		099C3D201314D13500A160C4 /* AdWhirlAdNetworkRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEA1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m */; };
+		099C3D211314D13500A160C4 /* AdWhirlClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEC1314D13500A160C4 /* AdWhirlClassWrapper.m */; };
+		099C3D221314D13500A160C4 /* AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEE1314D13500A160C4 /* AdWhirlConfig.m */; };
+		099C3D231314D13500A160C4 /* AdWhirlConfigStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF01314D13500A160C4 /* AdWhirlConfigStore.m */; };
+		099C3D241314D13500A160C4 /* AdWhirlCustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF21314D13500A160C4 /* AdWhirlCustomAdView.m */; };
+		099C3D251314D13500A160C4 /* AdWhirlError.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF41314D13500A160C4 /* AdWhirlError.m */; };
+		099C3D261314D13500A160C4 /* AdWhirlLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF61314D13500A160C4 /* AdWhirlLog.m */; };
+		099C3D271314D13500A160C4 /* AdWhirlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF81314D13500A160C4 /* AdWhirlView.m */; };
+		099C3D281314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C3CF91314D13500A160C4 /* AdWhirlWebBrowser.xib */; };
+		099C3D291314D13500A160C4 /* AdWhirlWebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFB1314D13500A160C4 /* AdWhirlWebBrowserController.m */; };
+		099C3D2A1314D13500A160C4 /* ARRollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFC1314D13500A160C4 /* ARRollerView.m */; };
+		099C3D2B1314D13500A160C4 /* AWNetworkReachabilityWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFF1314D13500A160C4 /* AWNetworkReachabilityWrapper.m */; };
+		099C3D2C1314D13500A160C4 /* UIColor+AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3D011314D13500A160C4 /* UIColor+AdWhirlConfig.m */; };
+		099C3D2D1314D13500A160C4 /* AdWhirlAdapterIAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CD91314D13500A160C4 /* AdWhirlAdapterIAd.m */; };
+		099C3D2E1314D13500A160C4 /* AdWhirlAdapterCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CDF1314D13500A160C4 /* AdWhirlAdapterCustom.m */; };
+		099C3D2F1314D13500A160C4 /* AdWhirlAdapterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE11314D13500A160C4 /* AdWhirlAdapterEvent.m */; };
+		099C3D301314D13500A160C4 /* AdWhirlAdapterGeneric.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE31314D13500A160C4 /* AdWhirlAdapterGeneric.m */; };
+		099C3D311314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE51314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m */; };
+		099C3D321314D13500A160C4 /* AdWhirlAdNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE61314D13500A160C4 /* AdWhirlAdNetworkAdapter.m */; };
+		099C3D331314D13500A160C4 /* AdWhirlAdNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CE81314D13500A160C4 /* AdWhirlAdNetworkConfig.m */; };
+		099C3D341314D13500A160C4 /* AdWhirlAdNetworkRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEA1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m */; };
+		099C3D351314D13500A160C4 /* AdWhirlClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEC1314D13500A160C4 /* AdWhirlClassWrapper.m */; };
+		099C3D361314D13500A160C4 /* AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CEE1314D13500A160C4 /* AdWhirlConfig.m */; };
+		099C3D371314D13500A160C4 /* AdWhirlConfigStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF01314D13500A160C4 /* AdWhirlConfigStore.m */; };
+		099C3D381314D13500A160C4 /* AdWhirlCustomAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF21314D13500A160C4 /* AdWhirlCustomAdView.m */; };
+		099C3D391314D13500A160C4 /* AdWhirlError.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF41314D13500A160C4 /* AdWhirlError.m */; };
+		099C3D3A1314D13500A160C4 /* AdWhirlLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF61314D13500A160C4 /* AdWhirlLog.m */; };
+		099C3D3B1314D13500A160C4 /* AdWhirlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CF81314D13500A160C4 /* AdWhirlView.m */; };
+		099C3D3C1314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C3CF91314D13500A160C4 /* AdWhirlWebBrowser.xib */; };
+		099C3D3D1314D13500A160C4 /* AdWhirlWebBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFB1314D13500A160C4 /* AdWhirlWebBrowserController.m */; };
+		099C3D3E1314D13500A160C4 /* ARRollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFC1314D13500A160C4 /* ARRollerView.m */; };
+		099C3D3F1314D13500A160C4 /* AWNetworkReachabilityWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3CFF1314D13500A160C4 /* AWNetworkReachabilityWrapper.m */; };
+		099C3D401314D13500A160C4 /* UIColor+AdWhirlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3D011314D13500A160C4 /* UIColor+AdWhirlConfig.m */; };
+		099C3D441314D14500A160C4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C3D431314D14500A160C4 /* iAd.framework */; };
+		099C3DB81314D8BB00A160C4 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA31314D8BB00A160C4 /* CDataScanner.m */; };
+		099C3DB91314D8BB00A160C4 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA61314D8BB00A160C4 /* CDataScanner_Extensions.m */; };
+		099C3DBA1314D8BB00A160C4 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA81314D8BB00A160C4 /* NSCharacterSet_Extensions.m */; };
+		099C3DBB1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAA1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m */; };
+		099C3DBC1314D8BB00A160C4 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAC1314D8BB00A160C4 /* NSScanner_Extensions.m */; };
+		099C3DBD1314D8BB00A160C4 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAF1314D8BB00A160C4 /* CJSONDataSerializer.m */; };
+		099C3DBE1314D8BB00A160C4 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB11314D8BB00A160C4 /* CJSONDeserializer.m */; };
+		099C3DBF1314D8BB00A160C4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB31314D8BB00A160C4 /* CJSONScanner.m */; };
+		099C3DC01314D8BB00A160C4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */; };
+		099C3DC11314D8BB00A160C4 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */; };
+		099C3DC21314D8BB00A160C4 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA31314D8BB00A160C4 /* CDataScanner.m */; };
+		099C3DC31314D8BB00A160C4 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA61314D8BB00A160C4 /* CDataScanner_Extensions.m */; };
+		099C3DC41314D8BB00A160C4 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA81314D8BB00A160C4 /* NSCharacterSet_Extensions.m */; };
+		099C3DC51314D8BB00A160C4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAA1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m */; };
+		099C3DC61314D8BB00A160C4 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAC1314D8BB00A160C4 /* NSScanner_Extensions.m */; };
+		099C3DC71314D8BB00A160C4 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAF1314D8BB00A160C4 /* CJSONDataSerializer.m */; };
+		099C3DC81314D8BB00A160C4 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB11314D8BB00A160C4 /* CJSONDeserializer.m */; };
+		099C3DC91314D8BB00A160C4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB31314D8BB00A160C4 /* CJSONScanner.m */; };
+		099C3DCA1314D8BB00A160C4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */; };
+		099C3DCB1314D8BB00A160C4 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */; };
+		099C3DCC1314D8BB00A160C4 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA31314D8BB00A160C4 /* CDataScanner.m */; };
+		099C3DCD1314D8BB00A160C4 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA61314D8BB00A160C4 /* CDataScanner_Extensions.m */; };
+		099C3DCE1314D8BB00A160C4 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DA81314D8BB00A160C4 /* NSCharacterSet_Extensions.m */; };
+		099C3DCF1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAA1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m */; };
+		099C3DD01314D8BB00A160C4 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAC1314D8BB00A160C4 /* NSScanner_Extensions.m */; };
+		099C3DD11314D8BB00A160C4 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DAF1314D8BB00A160C4 /* CJSONDataSerializer.m */; };
+		099C3DD21314D8BB00A160C4 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB11314D8BB00A160C4 /* CJSONDeserializer.m */; };
+		099C3DD31314D8BB00A160C4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB31314D8BB00A160C4 /* CJSONScanner.m */; };
+		099C3DD41314D8BB00A160C4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */; };
+		099C3DD51314D8BB00A160C4 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */; };
+		099C3DD91314D8DE00A160C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C3DD81314D8DE00A160C4 /* CoreLocation.framework */; };
 		09B252E112F8206200E1D08A /* Board1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E012F8206200E1D08A /* Board1.jpg */; };
 		09B252E712F82BF500E1D08A /* grey-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E612F82BF500E1D08A /* grey-button.png */; };
 		09B2536F12F956C300E1D08A /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536C12F956C300E1D08A /* PersistentData.m */; };
@@ -217,6 +309,71 @@
 		099C3C5F1313D8C200A160C4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		099C3C601313D8C200A160C4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		099C3C761313D8E000A160C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		099C3CD81314D13500A160C4 /* AdWhirlAdapterIAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterIAd.h; sourceTree = "<group>"; };
+		099C3CD91314D13500A160C4 /* AdWhirlAdapterIAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterIAd.m; sourceTree = "<group>"; };
+		099C3CDA1314D13500A160C4 /* AdWhirlAdNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdNetworkAdapter.h; sourceTree = "<group>"; };
+		099C3CDB1314D13500A160C4 /* AdWhirlDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlDelegateProtocol.h; sourceTree = "<group>"; };
+		099C3CDC1314D13500A160C4 /* AdWhirlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlView.h; sourceTree = "<group>"; };
+		099C3CDE1314D13500A160C4 /* AdWhirlAdapterCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterCustom.h; sourceTree = "<group>"; };
+		099C3CDF1314D13500A160C4 /* AdWhirlAdapterCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterCustom.m; sourceTree = "<group>"; };
+		099C3CE01314D13500A160C4 /* AdWhirlAdapterEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterEvent.h; sourceTree = "<group>"; };
+		099C3CE11314D13500A160C4 /* AdWhirlAdapterEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterEvent.m; sourceTree = "<group>"; };
+		099C3CE21314D13500A160C4 /* AdWhirlAdapterGeneric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterGeneric.h; sourceTree = "<group>"; };
+		099C3CE31314D13500A160C4 /* AdWhirlAdapterGeneric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterGeneric.m; sourceTree = "<group>"; };
+		099C3CE41314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdWhirlAdNetworkAdapter+Helpers.h"; sourceTree = "<group>"; };
+		099C3CE51314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdWhirlAdNetworkAdapter+Helpers.m"; sourceTree = "<group>"; };
+		099C3CE61314D13500A160C4 /* AdWhirlAdNetworkAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdNetworkAdapter.m; sourceTree = "<group>"; };
+		099C3CE71314D13500A160C4 /* AdWhirlAdNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdNetworkConfig.h; sourceTree = "<group>"; };
+		099C3CE81314D13500A160C4 /* AdWhirlAdNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdNetworkConfig.m; sourceTree = "<group>"; };
+		099C3CE91314D13500A160C4 /* AdWhirlAdNetworkRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdNetworkRegistry.h; sourceTree = "<group>"; };
+		099C3CEA1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdNetworkRegistry.m; sourceTree = "<group>"; };
+		099C3CEB1314D13500A160C4 /* AdWhirlClassWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlClassWrapper.h; sourceTree = "<group>"; };
+		099C3CEC1314D13500A160C4 /* AdWhirlClassWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlClassWrapper.m; sourceTree = "<group>"; };
+		099C3CED1314D13500A160C4 /* AdWhirlConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlConfig.h; sourceTree = "<group>"; };
+		099C3CEE1314D13500A160C4 /* AdWhirlConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlConfig.m; sourceTree = "<group>"; };
+		099C3CEF1314D13500A160C4 /* AdWhirlConfigStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlConfigStore.h; sourceTree = "<group>"; };
+		099C3CF01314D13500A160C4 /* AdWhirlConfigStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlConfigStore.m; sourceTree = "<group>"; };
+		099C3CF11314D13500A160C4 /* AdWhirlCustomAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlCustomAdView.h; sourceTree = "<group>"; };
+		099C3CF21314D13500A160C4 /* AdWhirlCustomAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlCustomAdView.m; sourceTree = "<group>"; };
+		099C3CF31314D13500A160C4 /* AdWhirlError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlError.h; sourceTree = "<group>"; };
+		099C3CF41314D13500A160C4 /* AdWhirlError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlError.m; sourceTree = "<group>"; };
+		099C3CF51314D13500A160C4 /* AdWhirlLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlLog.h; sourceTree = "<group>"; };
+		099C3CF61314D13500A160C4 /* AdWhirlLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlLog.m; sourceTree = "<group>"; };
+		099C3CF71314D13500A160C4 /* AdWhirlView+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdWhirlView+.h"; sourceTree = "<group>"; };
+		099C3CF81314D13500A160C4 /* AdWhirlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlView.m; sourceTree = "<group>"; };
+		099C3CF91314D13500A160C4 /* AdWhirlWebBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdWhirlWebBrowser.xib; sourceTree = "<group>"; };
+		099C3CFA1314D13500A160C4 /* AdWhirlWebBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlWebBrowserController.h; sourceTree = "<group>"; };
+		099C3CFB1314D13500A160C4 /* AdWhirlWebBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlWebBrowserController.m; sourceTree = "<group>"; };
+		099C3CFC1314D13500A160C4 /* ARRollerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARRollerView.m; sourceTree = "<group>"; };
+		099C3CFD1314D13500A160C4 /* AWNetworkReachabilityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNetworkReachabilityDelegate.h; sourceTree = "<group>"; };
+		099C3CFE1314D13500A160C4 /* AWNetworkReachabilityWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNetworkReachabilityWrapper.h; sourceTree = "<group>"; };
+		099C3CFF1314D13500A160C4 /* AWNetworkReachabilityWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNetworkReachabilityWrapper.m; sourceTree = "<group>"; };
+		099C3D001314D13500A160C4 /* UIColor+AdWhirlConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdWhirlConfig.h"; sourceTree = "<group>"; };
+		099C3D011314D13500A160C4 /* UIColor+AdWhirlConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AdWhirlConfig.m"; sourceTree = "<group>"; };
+		099C3D031314D13500A160C4 /* ARRollerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRollerProtocol.h; sourceTree = "<group>"; };
+		099C3D041314D13500A160C4 /* ARRollerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARRollerView.h; sourceTree = "<group>"; };
+		099C3D431314D14500A160C4 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		099C3DA21314D8BB00A160C4 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		099C3DA31314D8BB00A160C4 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		099C3DA51314D8BB00A160C4 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		099C3DA61314D8BB00A160C4 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		099C3DA71314D8BB00A160C4 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		099C3DA81314D8BB00A160C4 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		099C3DA91314D8BB00A160C4 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		099C3DAA1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		099C3DAB1314D8BB00A160C4 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		099C3DAC1314D8BB00A160C4 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		099C3DAE1314D8BB00A160C4 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		099C3DAF1314D8BB00A160C4 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		099C3DB01314D8BB00A160C4 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		099C3DB11314D8BB00A160C4 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		099C3DB21314D8BB00A160C4 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		099C3DB31314D8BB00A160C4 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		099C3DB41314D8BB00A160C4 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		099C3DB61314D8BB00A160C4 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
+		099C3DD81314D8DE00A160C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		09B252E012F8206200E1D08A /* Board1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Board1.jpg; sourceTree = "<group>"; };
 		09B252E612F82BF500E1D08A /* grey-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-button.png"; sourceTree = "<group>"; };
 		09B2536B12F956C300E1D08A /* PersistentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentData.h; sourceTree = "<group>"; };
@@ -298,6 +455,8 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				09B2538012F957FC00E1D08A /* CoreData.framework in Frameworks */,
 				099C3C771313D8E000A160C4 /* SystemConfiguration.framework in Frameworks */,
+				099C3D441314D14500A160C4 /* iAd.framework in Frameworks */,
+				099C3DD91314D8DE00A160C4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +466,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				099C3CD61314D13500A160C4 /* AdWhirl */,
 				099C38CA1307D94400A160C4 /* FBConnect */,
 				09B2537812F956D800E1D08A /* DataModel */,
 				1D3623240D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.h */,
@@ -352,6 +512,124 @@
 				099C38D71307D94400A160C4 /* SBJsonParser.m */,
 				099C38D81307D94400A160C4 /* SBJsonWriter.h */,
 				099C38D91307D94400A160C4 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		099C3CD61314D13500A160C4 /* AdWhirl */ = {
+			isa = PBXGroup;
+			children = (
+				099C3CD71314D13500A160C4 /* adapters */,
+				099C3CDB1314D13500A160C4 /* AdWhirlDelegateProtocol.h */,
+				099C3CDC1314D13500A160C4 /* AdWhirlView.h */,
+				099C3CDD1314D13500A160C4 /* internal */,
+				099C3D021314D13500A160C4 /* legacy */,
+				099C3DA11314D8BB00A160C4 /* TouchJSON */,
+			);
+			path = AdWhirl;
+			sourceTree = "<group>";
+		};
+		099C3CD71314D13500A160C4 /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				099C3CD81314D13500A160C4 /* AdWhirlAdapterIAd.h */,
+				099C3CD91314D13500A160C4 /* AdWhirlAdapterIAd.m */,
+				099C3CDA1314D13500A160C4 /* AdWhirlAdNetworkAdapter.h */,
+			);
+			path = adapters;
+			sourceTree = "<group>";
+		};
+		099C3CDD1314D13500A160C4 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				099C3CDE1314D13500A160C4 /* AdWhirlAdapterCustom.h */,
+				099C3CDF1314D13500A160C4 /* AdWhirlAdapterCustom.m */,
+				099C3CE01314D13500A160C4 /* AdWhirlAdapterEvent.h */,
+				099C3CE11314D13500A160C4 /* AdWhirlAdapterEvent.m */,
+				099C3CE21314D13500A160C4 /* AdWhirlAdapterGeneric.h */,
+				099C3CE31314D13500A160C4 /* AdWhirlAdapterGeneric.m */,
+				099C3CE41314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.h */,
+				099C3CE51314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m */,
+				099C3CE61314D13500A160C4 /* AdWhirlAdNetworkAdapter.m */,
+				099C3CE71314D13500A160C4 /* AdWhirlAdNetworkConfig.h */,
+				099C3CE81314D13500A160C4 /* AdWhirlAdNetworkConfig.m */,
+				099C3CE91314D13500A160C4 /* AdWhirlAdNetworkRegistry.h */,
+				099C3CEA1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m */,
+				099C3CEB1314D13500A160C4 /* AdWhirlClassWrapper.h */,
+				099C3CEC1314D13500A160C4 /* AdWhirlClassWrapper.m */,
+				099C3CED1314D13500A160C4 /* AdWhirlConfig.h */,
+				099C3CEE1314D13500A160C4 /* AdWhirlConfig.m */,
+				099C3CEF1314D13500A160C4 /* AdWhirlConfigStore.h */,
+				099C3CF01314D13500A160C4 /* AdWhirlConfigStore.m */,
+				099C3CF11314D13500A160C4 /* AdWhirlCustomAdView.h */,
+				099C3CF21314D13500A160C4 /* AdWhirlCustomAdView.m */,
+				099C3CF31314D13500A160C4 /* AdWhirlError.h */,
+				099C3CF41314D13500A160C4 /* AdWhirlError.m */,
+				099C3CF51314D13500A160C4 /* AdWhirlLog.h */,
+				099C3CF61314D13500A160C4 /* AdWhirlLog.m */,
+				099C3CF71314D13500A160C4 /* AdWhirlView+.h */,
+				099C3CF81314D13500A160C4 /* AdWhirlView.m */,
+				099C3CF91314D13500A160C4 /* AdWhirlWebBrowser.xib */,
+				099C3CFA1314D13500A160C4 /* AdWhirlWebBrowserController.h */,
+				099C3CFB1314D13500A160C4 /* AdWhirlWebBrowserController.m */,
+				099C3CFC1314D13500A160C4 /* ARRollerView.m */,
+				099C3CFD1314D13500A160C4 /* AWNetworkReachabilityDelegate.h */,
+				099C3CFE1314D13500A160C4 /* AWNetworkReachabilityWrapper.h */,
+				099C3CFF1314D13500A160C4 /* AWNetworkReachabilityWrapper.m */,
+				099C3D001314D13500A160C4 /* UIColor+AdWhirlConfig.h */,
+				099C3D011314D13500A160C4 /* UIColor+AdWhirlConfig.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		099C3D021314D13500A160C4 /* legacy */ = {
+			isa = PBXGroup;
+			children = (
+				099C3D031314D13500A160C4 /* ARRollerProtocol.h */,
+				099C3D041314D13500A160C4 /* ARRollerView.h */,
+			);
+			path = legacy;
+			sourceTree = "<group>";
+		};
+		099C3DA11314D8BB00A160C4 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				099C3DA21314D8BB00A160C4 /* CDataScanner.h */,
+				099C3DA31314D8BB00A160C4 /* CDataScanner.m */,
+				099C3DA41314D8BB00A160C4 /* Extensions */,
+				099C3DAD1314D8BB00A160C4 /* JSON */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
+		099C3DA41314D8BB00A160C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				099C3DA51314D8BB00A160C4 /* CDataScanner_Extensions.h */,
+				099C3DA61314D8BB00A160C4 /* CDataScanner_Extensions.m */,
+				099C3DA71314D8BB00A160C4 /* NSCharacterSet_Extensions.h */,
+				099C3DA81314D8BB00A160C4 /* NSCharacterSet_Extensions.m */,
+				099C3DA91314D8BB00A160C4 /* NSDictionary_JSONExtensions.h */,
+				099C3DAA1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m */,
+				099C3DAB1314D8BB00A160C4 /* NSScanner_Extensions.h */,
+				099C3DAC1314D8BB00A160C4 /* NSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		099C3DAD1314D8BB00A160C4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				099C3DAE1314D8BB00A160C4 /* CJSONDataSerializer.h */,
+				099C3DAF1314D8BB00A160C4 /* CJSONDataSerializer.m */,
+				099C3DB01314D8BB00A160C4 /* CJSONDeserializer.h */,
+				099C3DB11314D8BB00A160C4 /* CJSONDeserializer.m */,
+				099C3DB21314D8BB00A160C4 /* CJSONScanner.h */,
+				099C3DB31314D8BB00A160C4 /* CJSONScanner.m */,
+				099C3DB41314D8BB00A160C4 /* CJSONSerializer.h */,
+				099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */,
+				099C3DB61314D8BB00A160C4 /* CSerializedJSONData.h */,
+				099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -477,6 +755,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				099C3DD81314D8DE00A160C4 /* CoreLocation.framework */,
+				099C3D431314D14500A160C4 /* iAd.framework */,
 				09B2537F12F957FC00E1D08A /* CoreData.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -595,6 +875,7 @@
 				099C3AAF130E024E00A160C4 /* puzzle-button.png in Resources */,
 				099C3AB3130E031800A160C4 /* counter-background.png in Resources */,
 				099C3BBB1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
+				099C3D281314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +906,7 @@
 				099C3AB0130E024E00A160C4 /* puzzle-button.png in Resources */,
 				099C3AB4130E031800A160C4 /* counter-background.png in Resources */,
 				099C3BB91313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
+				099C3D141314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +935,7 @@
 				099C3AB1130E024E00A160C4 /* puzzle-button.png in Resources */,
 				099C3AB5130E031800A160C4 /* counter-background.png in Resources */,
 				099C3BBD1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
+				099C3D3C1314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +988,35 @@
 				099C38ED1307D94400A160C4 /* FBDialog.m in Sources */,
 				099C3BBA1313C06500A160C4 /* MorePuzzlesViewController.m in Sources */,
 				099C3C621313D8C200A160C4 /* Reachability.m in Sources */,
+				099C3D191314D13500A160C4 /* AdWhirlAdapterIAd.m in Sources */,
+				099C3D1A1314D13500A160C4 /* AdWhirlAdapterCustom.m in Sources */,
+				099C3D1B1314D13500A160C4 /* AdWhirlAdapterEvent.m in Sources */,
+				099C3D1C1314D13500A160C4 /* AdWhirlAdapterGeneric.m in Sources */,
+				099C3D1D1314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */,
+				099C3D1E1314D13500A160C4 /* AdWhirlAdNetworkAdapter.m in Sources */,
+				099C3D1F1314D13500A160C4 /* AdWhirlAdNetworkConfig.m in Sources */,
+				099C3D201314D13500A160C4 /* AdWhirlAdNetworkRegistry.m in Sources */,
+				099C3D211314D13500A160C4 /* AdWhirlClassWrapper.m in Sources */,
+				099C3D221314D13500A160C4 /* AdWhirlConfig.m in Sources */,
+				099C3D231314D13500A160C4 /* AdWhirlConfigStore.m in Sources */,
+				099C3D241314D13500A160C4 /* AdWhirlCustomAdView.m in Sources */,
+				099C3D251314D13500A160C4 /* AdWhirlError.m in Sources */,
+				099C3D261314D13500A160C4 /* AdWhirlLog.m in Sources */,
+				099C3D271314D13500A160C4 /* AdWhirlView.m in Sources */,
+				099C3D291314D13500A160C4 /* AdWhirlWebBrowserController.m in Sources */,
+				099C3D2A1314D13500A160C4 /* ARRollerView.m in Sources */,
+				099C3D2B1314D13500A160C4 /* AWNetworkReachabilityWrapper.m in Sources */,
+				099C3D2C1314D13500A160C4 /* UIColor+AdWhirlConfig.m in Sources */,
+				099C3DC21314D8BB00A160C4 /* CDataScanner.m in Sources */,
+				099C3DC31314D8BB00A160C4 /* CDataScanner_Extensions.m in Sources */,
+				099C3DC41314D8BB00A160C4 /* NSCharacterSet_Extensions.m in Sources */,
+				099C3DC51314D8BB00A160C4 /* NSDictionary_JSONExtensions.m in Sources */,
+				099C3DC61314D8BB00A160C4 /* NSScanner_Extensions.m in Sources */,
+				099C3DC71314D8BB00A160C4 /* CJSONDataSerializer.m in Sources */,
+				099C3DC81314D8BB00A160C4 /* CJSONDeserializer.m in Sources */,
+				099C3DC91314D8BB00A160C4 /* CJSONScanner.m in Sources */,
+				099C3DCA1314D8BB00A160C4 /* CJSONSerializer.m in Sources */,
+				099C3DCB1314D8BB00A160C4 /* CSerializedJSONData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +1050,35 @@
 				099C38F81307D94400A160C4 /* FBDialog.m in Sources */,
 				099C3BB81313C06500A160C4 /* MorePuzzlesViewController.m in Sources */,
 				099C3C611313D8C200A160C4 /* Reachability.m in Sources */,
+				099C3D051314D13500A160C4 /* AdWhirlAdapterIAd.m in Sources */,
+				099C3D061314D13500A160C4 /* AdWhirlAdapterCustom.m in Sources */,
+				099C3D071314D13500A160C4 /* AdWhirlAdapterEvent.m in Sources */,
+				099C3D081314D13500A160C4 /* AdWhirlAdapterGeneric.m in Sources */,
+				099C3D091314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */,
+				099C3D0A1314D13500A160C4 /* AdWhirlAdNetworkAdapter.m in Sources */,
+				099C3D0B1314D13500A160C4 /* AdWhirlAdNetworkConfig.m in Sources */,
+				099C3D0C1314D13500A160C4 /* AdWhirlAdNetworkRegistry.m in Sources */,
+				099C3D0D1314D13500A160C4 /* AdWhirlClassWrapper.m in Sources */,
+				099C3D0E1314D13500A160C4 /* AdWhirlConfig.m in Sources */,
+				099C3D0F1314D13500A160C4 /* AdWhirlConfigStore.m in Sources */,
+				099C3D101314D13500A160C4 /* AdWhirlCustomAdView.m in Sources */,
+				099C3D111314D13500A160C4 /* AdWhirlError.m in Sources */,
+				099C3D121314D13500A160C4 /* AdWhirlLog.m in Sources */,
+				099C3D131314D13500A160C4 /* AdWhirlView.m in Sources */,
+				099C3D151314D13500A160C4 /* AdWhirlWebBrowserController.m in Sources */,
+				099C3D161314D13500A160C4 /* ARRollerView.m in Sources */,
+				099C3D171314D13500A160C4 /* AWNetworkReachabilityWrapper.m in Sources */,
+				099C3D181314D13500A160C4 /* UIColor+AdWhirlConfig.m in Sources */,
+				099C3DB81314D8BB00A160C4 /* CDataScanner.m in Sources */,
+				099C3DB91314D8BB00A160C4 /* CDataScanner_Extensions.m in Sources */,
+				099C3DBA1314D8BB00A160C4 /* NSCharacterSet_Extensions.m in Sources */,
+				099C3DBB1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m in Sources */,
+				099C3DBC1314D8BB00A160C4 /* NSScanner_Extensions.m in Sources */,
+				099C3DBD1314D8BB00A160C4 /* CJSONDataSerializer.m in Sources */,
+				099C3DBE1314D8BB00A160C4 /* CJSONDeserializer.m in Sources */,
+				099C3DBF1314D8BB00A160C4 /* CJSONScanner.m in Sources */,
+				099C3DC01314D8BB00A160C4 /* CJSONSerializer.m in Sources */,
+				099C3DC11314D8BB00A160C4 /* CSerializedJSONData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +1112,35 @@
 				099C39031307D94400A160C4 /* FBDialog.m in Sources */,
 				099C3BBC1313C06500A160C4 /* MorePuzzlesViewController.m in Sources */,
 				099C3C631313D8C200A160C4 /* Reachability.m in Sources */,
+				099C3D2D1314D13500A160C4 /* AdWhirlAdapterIAd.m in Sources */,
+				099C3D2E1314D13500A160C4 /* AdWhirlAdapterCustom.m in Sources */,
+				099C3D2F1314D13500A160C4 /* AdWhirlAdapterEvent.m in Sources */,
+				099C3D301314D13500A160C4 /* AdWhirlAdapterGeneric.m in Sources */,
+				099C3D311314D13500A160C4 /* AdWhirlAdNetworkAdapter+Helpers.m in Sources */,
+				099C3D321314D13500A160C4 /* AdWhirlAdNetworkAdapter.m in Sources */,
+				099C3D331314D13500A160C4 /* AdWhirlAdNetworkConfig.m in Sources */,
+				099C3D341314D13500A160C4 /* AdWhirlAdNetworkRegistry.m in Sources */,
+				099C3D351314D13500A160C4 /* AdWhirlClassWrapper.m in Sources */,
+				099C3D361314D13500A160C4 /* AdWhirlConfig.m in Sources */,
+				099C3D371314D13500A160C4 /* AdWhirlConfigStore.m in Sources */,
+				099C3D381314D13500A160C4 /* AdWhirlCustomAdView.m in Sources */,
+				099C3D391314D13500A160C4 /* AdWhirlError.m in Sources */,
+				099C3D3A1314D13500A160C4 /* AdWhirlLog.m in Sources */,
+				099C3D3B1314D13500A160C4 /* AdWhirlView.m in Sources */,
+				099C3D3D1314D13500A160C4 /* AdWhirlWebBrowserController.m in Sources */,
+				099C3D3E1314D13500A160C4 /* ARRollerView.m in Sources */,
+				099C3D3F1314D13500A160C4 /* AWNetworkReachabilityWrapper.m in Sources */,
+				099C3D401314D13500A160C4 /* UIColor+AdWhirlConfig.m in Sources */,
+				099C3DCC1314D8BB00A160C4 /* CDataScanner.m in Sources */,
+				099C3DCD1314D8BB00A160C4 /* CDataScanner_Extensions.m in Sources */,
+				099C3DCE1314D8BB00A160C4 /* NSCharacterSet_Extensions.m in Sources */,
+				099C3DCF1314D8BB00A160C4 /* NSDictionary_JSONExtensions.m in Sources */,
+				099C3DD01314D8BB00A160C4 /* NSScanner_Extensions.m in Sources */,
+				099C3DD11314D8BB00A160C4 /* CJSONDataSerializer.m in Sources */,
+				099C3DD21314D8BB00A160C4 /* CJSONDeserializer.m in Sources */,
+				099C3DD31314D8BB00A160C4 /* CJSONScanner.m in Sources */,
+				099C3DD41314D8BB00A160C4 /* CJSONSerializer.m in Sources */,
+				099C3DD51314D8BB00A160C4 /* CSerializedJSONData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
