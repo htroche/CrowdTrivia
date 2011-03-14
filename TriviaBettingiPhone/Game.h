@@ -25,7 +25,7 @@
 @property (nonatomic, retain) Question * question;
 @property (nonatomic, retain) Puzzle * puzzle;
 
-
++ (Game *) getNewGame;
 + (Game *) getGame;
 
 - (void) changeCredits:(int) delta;

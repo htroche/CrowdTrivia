@@ -13,6 +13,7 @@
 - (void) setStatusMessage:(NSString *) message;
 - (void) finishedPuzzles;
 - (void) finishedQuestions;
+- (void) finishedMessage:(NSString *) message;
 - (void) fetchError;
 
 @end
@@ -21,6 +22,8 @@
 	NSString *currentElement;
 	Puzzle *currentPuzzle;
 	<PuzzleParserDelegate> delegate;
+	int totalPuzzles;
+	NSMutableData *receivedData;
 }
 
 @property (nonatomic, retain) NSString * currentElement;

@@ -8,6 +8,7 @@
 
 #import "TriviaBettingiPhoneAppDelegate.h"
 #import "TriviaBettingiPhoneViewController.h"
+#import "Game.h"
 
 @implementation TriviaBettingiPhoneAppDelegate
 
@@ -43,6 +44,8 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
+	Game *game = [Game getGame];
+	[game save:nil];
 }
 
 
@@ -65,6 +68,8 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+	Game *game = [Game getGame];
+	[game save:nil];
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {

@@ -48,11 +48,17 @@ static NSString* kAppId = @"136114726451991";
 	AdWhirlView *awView = [AdWhirlView requestAdWhirlViewWithDelegate:self];
 	[self.view addSubview:awView];
 	pauseMode = NO;
+	UIFont *font = [UIFont fontWithName:@"American Typewriter" size:14.0];
+	question.font = font;
 }
 
 - (void) viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	Game *game = [Game getGame];
+	if(game == nil) {
+		[self selectCategoryPressed:nil];
+		return;
+	}
 	if(game.puzzle == nil) {
 		[self selectCategoryPressed:nil];
 		return;
@@ -134,6 +140,7 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void) correctAnswer {
+	[self colorAnswers];
 	int points = [betLabel.text intValue];
 	Game *game = [Game getGame];
 	[game changeCredits:points];
@@ -149,6 +156,7 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void) wrongAnswer {
+	[self colorAnswers];
 	Game *game = [Game getGame];
 	if([game isLastQuestion]) {
 		[self puzzleFinished];
@@ -162,6 +170,7 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void) timeOut {
+	[self colorAnswers];
 	Game *game = [Game getGame];
 	if([game isLastQuestion]) {
 		[self puzzleFinished];
@@ -239,9 +248,29 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (void) resetBoard {
+	answer1Label.textColor = [UIColor whiteColor];
+	answer2Label.textColor = [UIColor whiteColor];
+	answer3Label.textColor = [UIColor whiteColor];
+	answer4Label.textColor = [UIColor whiteColor];
 	betLabel.text = @"100";
 	timerLabel.text = @"30";
 	timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(downClock:) userInfo:nil repeats:YES];
+}
+
+- (void) colorAnswers {
+	Game *game = [Game getGame];
+	answer1Label.textColor = [UIColor redColor];
+	answer2Label.textColor = [UIColor redColor];
+	answer3Label.textColor = [UIColor redColor];
+	answer4Label.textColor = [UIColor redColor];
+	if([game.question.correctAnswer intValue] == 1)
+		answer1Label.textColor = [UIColor greenColor];
+	if([game.question.correctAnswer intValue] == 2)
+		answer2Label.textColor = [UIColor greenColor];
+	if([game.question.correctAnswer intValue] == 3)
+		answer3Label.textColor = [UIColor greenColor];
+	if([game.question.correctAnswer intValue] == 4)
+		answer4Label.textColor = [UIColor greenColor];
 }
 
 - (IBAction) facebookPressed:(id) sender {

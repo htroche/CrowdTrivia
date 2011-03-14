@@ -14,6 +14,8 @@
 @synthesize currentElement;
 
 - (void) getRemotePuzzles:(<PuzzleParserDelegate>) d {
+	receivedData = [NSMutableData dataWithCapacity:30];
+	[receivedData retain];
 	delegate = d;
 	[self getPuzzles:nil];
 }
@@ -33,6 +35,7 @@
 		if(currentPuzzle != nil) {
 			[currentPuzzle save:nil];
 			currentPuzzle = nil;
+			totalPuzzles++;
 		}
 		
 	}
@@ -56,7 +59,7 @@
 - (void) getPuzzles:(NSError *) error {
 	[delegate setStatusMessage:@"Quizzes are coming..."];
 	NSDate *since = [[NSUserDefaults standardUserDefaults] objectForKey:@"lastUpdated"];
-	NSString *url = @"http://triviabetting.heroku.com/puzzles.xml";
+	NSString *url = @"http://crowdtrivia.heroku.com/puzzles.xml?lastUpdated=2011-03-15T00:00:00Z";
 	if(since != nil) {
 		NSDateFormatter *format = [[NSDateFormatter alloc] init];
 		[format setDateFormat:@"yyyy-MM-ddTHH:mm:ssZ"];
@@ -64,8 +67,9 @@
 		NSString *syncDate;
 		syncDate = [format stringFromDate:since];
 		[format release];
-		url = [NSString stringWithFormat:@"http://triviabetting.heroku.com/puzzles.xml?lastUpdated=",syncDate];
+		url = [NSString stringWithFormat:@"http://triviabetting.heroku.com/puzzles.xml?lastUpdated=%@",syncDate];
 	}
+	
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
 															  cachePolicy:NSURLRequestReloadIgnoringCacheData
 														  timeoutInterval:60.0];
@@ -79,17 +83,32 @@
 	[delegate setStatusMessage:@"No internet connection"];
 	//[delegate finishedPuzzles];
 	[delegate fetchError];
+	[delegate finishedMessage:[NSString stringWithFormat:@"Error downloading. Please try again later."]];
+	[receivedData release];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData  *)data {
-    [delegate setStatusMessage:@"Getting quizzes..."];
-	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
+	[receivedData appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+	[delegate setStatusMessage:@"Getting quizzes..."];
+	totalPuzzles = 0;
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:receivedData];
 	[parser setDelegate:self];
 	[parser setShouldProcessNamespaces:NO];
     [parser setShouldReportNamespacePrefixes:NO];
     [parser setShouldResolveExternalEntities:NO];
     [parser parse];
 	[delegate finishedPuzzles];
+	[[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"lastUpdated"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	if(totalPuzzles > 0)
+		[delegate finishedMessage:[NSString stringWithFormat:@"Downloaded %d new quizzes", totalPuzzles]];
+	else
+		[delegate finishedMessage:[NSString stringWithFormat:@"No new quizzes to download"]];
+	[receivedData release];
+
 }
 
 @end

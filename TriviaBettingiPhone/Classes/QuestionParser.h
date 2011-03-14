@@ -17,6 +17,7 @@
 	NSString *currentElement;
 	NSString *trimmedString;
 	<PuzzleParserDelegate> delegate;
+	NSMutableData *receivedData;
 }
 
 @property (nonatomic, retain) NSString * currentElement;

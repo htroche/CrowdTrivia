@@ -55,9 +55,17 @@ static DataModel *model = nil;
     if (persistentStoreCoordinator_ != nil) {
         return persistentStoreCoordinator_;
     }
-    
-    NSURL *storeURL = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"TriviaBetting.sqlite"]];
-    
+    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"TriviaBetting.sqlite"];
+    NSURL *storeURL = [NSURL fileURLWithPath:storePath];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+	if (![fileManager fileExistsAtPath:storePath]) {
+		NSString *defaultStorePath = [[NSBundle mainBundle] 
+									  pathForResource:@"TriviaBetting" ofType:@"sqlite"];
+		if (defaultStorePath) {
+			[fileManager copyItemAtPath:defaultStorePath 
+								 toPath:storePath error:NULL];
+		}
+	}
     NSError *error = nil;
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {

@@ -14,13 +14,16 @@
 @synthesize currentElement;
 
 - (void) getRemoteQuestions:(Puzzle *) p delegate:(<PuzzleParserDelegate>) d {
+	receivedData = [NSMutableData dataWithCapacity:30];
+	[receivedData retain];
 	delegate = d;
 	puzzle = p;
 	[self getQuestions:nil];
 }
 
 - (void) getQuestions:(NSError *) error {
-	NSString *url = [NSString stringWithFormat:@"http://triviabetting.heroku.com/puzzles/%@/questions.xml", puzzle.serverID];
+	NSString *url = [NSString stringWithFormat:@"http://crowdtrivia.heroku.com/puzzles/%@/questions.xml", puzzle.serverID];
+	NSLog(@"URL: %@", url);
 	NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
 															  cachePolicy:NSURLRequestReloadIgnoringCacheData
 														  timeoutInterval:60.0];
@@ -34,17 +37,11 @@
 	[delegate setStatusMessage:@"No internet connection"];
 	//[delegate finishedQuestions];
 	[delegate fetchError];
+	[receivedData release];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData  *)data {
-    [delegate setStatusMessage:@"Getting questions..."];
-	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
-	[parser setDelegate:self];
-	[parser setShouldProcessNamespaces:NO];
-    [parser setShouldReportNamespacePrefixes:NO];
-    [parser setShouldResolveExternalEntities:NO];
-    [parser parse];
-	[delegate finishedQuestions];
+    [receivedData appendData:data];
 }
 
 
@@ -80,13 +77,25 @@
 			currentQuestion.answer3 = trimmedString;
 		if([self.currentElement isEqualToString:@"answer4"])
 			currentQuestion.answer4 = trimmedString;
-		if([self.currentElement isEqualToString:@"question"])
+		if([self.currentElement isEqualToString:@"quiz-question"])
 			currentQuestion.question = trimmedString;
 		if([self.currentElement isEqualToString:@"correct-answer"])
 			currentQuestion.correctAnswer = [NSNumber numberWithInt:[trimmedString intValue]];
 		if([self.currentElement isEqualToString:@"difficulty"])
 			currentQuestion.difficulty = [NSNumber numberWithInt:[trimmedString intValue]];
 	}
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+	[delegate setStatusMessage:@"Getting questions..."];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:receivedData];
+	[parser setDelegate:self];
+	[parser setShouldProcessNamespaces:NO];
+    [parser setShouldReportNamespacePrefixes:NO];
+    [parser setShouldResolveExternalEntities:NO];
+    [parser parse];
+	[delegate finishedQuestions];
+	[receivedData release];
 }
 
 

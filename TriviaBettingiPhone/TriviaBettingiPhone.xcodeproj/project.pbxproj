@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098D40A5132E06AE00D1A886 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098D40A4132E06AE00D1A886 /* QuartzCore.framework */; };
+		098D4198132E172800D1A886 /* TriviaBetting.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 098D4197132E172800D1A886 /* TriviaBetting.sqlite */; };
+		098D4199132E172800D1A886 /* TriviaBetting.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 098D4197132E172800D1A886 /* TriviaBetting.sqlite */; };
+		098D419A132E172800D1A886 /* TriviaBetting.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 098D4197132E172800D1A886 /* TriviaBetting.sqlite */; };
 		099C38381303DF4100A160C4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C38371303DF4100A160C4 /* facebook.png */; };
 		099C38391303DF4100A160C4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C38371303DF4100A160C4 /* facebook.png */; };
 		099C383A1303DF4100A160C4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 099C38371303DF4100A160C4 /* facebook.png */; };
@@ -174,7 +178,18 @@
 		099C3DD31314D8BB00A160C4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB31314D8BB00A160C4 /* CJSONScanner.m */; };
 		099C3DD41314D8BB00A160C4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */; };
 		099C3DD51314D8BB00A160C4 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */; };
-		099C3DD91314D8DE00A160C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C3DD81314D8DE00A160C4 /* CoreLocation.framework */; };
+		099C4257132592D600A160C4 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C4256132592D600A160C4 /* libAdMob.a */; };
+		099C4258132592D600A160C4 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C4256132592D600A160C4 /* libAdMob.a */; };
+		099C4259132592D600A160C4 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C4256132592D600A160C4 /* libAdMob.a */; };
+		099C425C132592F200A160C4 /* AdWhirlAdapterAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C425B132592F200A160C4 /* AdWhirlAdapterAdMob.m */; };
+		099C425D132592F200A160C4 /* AdWhirlAdapterAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C425B132592F200A160C4 /* AdWhirlAdapterAdMob.m */; };
+		099C425E132592F200A160C4 /* AdWhirlAdapterAdMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 099C425B132592F200A160C4 /* AdWhirlAdapterAdMob.m */; };
+		099C42611325931200A160C4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C42601325931200A160C4 /* MessageUI.framework */; };
+		099C4276132593BE00A160C4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C4275132593BE00A160C4 /* AVFoundation.framework */; };
+		099C428513259AFF00A160C4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C428413259AFF00A160C4 /* MediaPlayer.framework */; };
+		099C428B13259B1500A160C4 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C428A13259B1500A160C4 /* CoreAudio.framework */; };
+		099C428F13259B2900A160C4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C428E13259B2900A160C4 /* CoreLocation.framework */; };
+		099C429313259B4700A160C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099C429213259B4700A160C4 /* AudioToolbox.framework */; };
 		09B252E112F8206200E1D08A /* Board1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E012F8206200E1D08A /* Board1.jpg */; };
 		09B252E712F82BF500E1D08A /* grey-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09B252E612F82BF500E1D08A /* grey-button.png */; };
 		09B2536F12F956C300E1D08A /* PersistentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B2536C12F956C300E1D08A /* PersistentData.m */; };
@@ -269,6 +284,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098D40A4132E06AE00D1A886 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		098D4197132E172800D1A886 /* TriviaBetting.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TriviaBetting.sqlite; sourceTree = "<group>"; };
 		099C38371303DF4100A160C4 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		099C383B1303E01B00A160C4 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		099C38CB1307D94400A160C4 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -373,7 +390,19 @@
 		099C3DB51314D8BB00A160C4 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		099C3DB61314D8BB00A160C4 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
 		099C3DB71314D8BB00A160C4 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
-		099C3DD81314D8DE00A160C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		099C4252132592D500A160C4 /* AdMobDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobDelegateProtocol.h; sourceTree = "<group>"; };
+		099C4253132592D500A160C4 /* AdMobInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobInterstitialAd.h; sourceTree = "<group>"; };
+		099C4254132592D500A160C4 /* AdMobInterstitialDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobInterstitialDelegateProtocol.h; sourceTree = "<group>"; };
+		099C4255132592D500A160C4 /* AdMobView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobView.h; sourceTree = "<group>"; };
+		099C4256132592D600A160C4 /* libAdMob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdMob.a; sourceTree = "<group>"; };
+		099C425A132592F200A160C4 /* AdWhirlAdapterAdMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdWhirlAdapterAdMob.h; sourceTree = "<group>"; };
+		099C425B132592F200A160C4 /* AdWhirlAdapterAdMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdWhirlAdapterAdMob.m; sourceTree = "<group>"; };
+		099C42601325931200A160C4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		099C4275132593BE00A160C4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		099C428413259AFF00A160C4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		099C428A13259B1500A160C4 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		099C428E13259B2900A160C4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		099C429213259B4700A160C4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		09B252E012F8206200E1D08A /* Board1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Board1.jpg; sourceTree = "<group>"; };
 		09B252E612F82BF500E1D08A /* grey-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-button.png"; sourceTree = "<group>"; };
 		09B2536B12F956C300E1D08A /* PersistentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentData.h; sourceTree = "<group>"; };
@@ -411,7 +440,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaBettingiPhoneAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaBettingiPhoneAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* TriviaBettingiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaBettingiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TriviaBettingiPhoneViewController.xib; sourceTree = "<group>"; };
@@ -432,6 +461,7 @@
 				09B253F812F966DE00E1D08A /* UIKit.framework in Frameworks */,
 				09B253F912F966DE00E1D08A /* CoreGraphics.framework in Frameworks */,
 				09B253FA12F966DE00E1D08A /* CoreData.framework in Frameworks */,
+				099C4258132592D600A160C4 /* libAdMob.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +473,7 @@
 				09B254D912F9672A00E1D08A /* UIKit.framework in Frameworks */,
 				09B254DA12F9672A00E1D08A /* Foundation.framework in Frameworks */,
 				09B254DB12F9672A00E1D08A /* CoreGraphics.framework in Frameworks */,
+				099C4257132592D600A160C4 /* libAdMob.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +487,14 @@
 				09B2538012F957FC00E1D08A /* CoreData.framework in Frameworks */,
 				099C3C771313D8E000A160C4 /* SystemConfiguration.framework in Frameworks */,
 				099C3D441314D14500A160C4 /* iAd.framework in Frameworks */,
-				099C3DD91314D8DE00A160C4 /* CoreLocation.framework in Frameworks */,
+				099C4259132592D600A160C4 /* libAdMob.a in Frameworks */,
+				099C42611325931200A160C4 /* MessageUI.framework in Frameworks */,
+				099C4276132593BE00A160C4 /* AVFoundation.framework in Frameworks */,
+				099C428513259AFF00A160C4 /* MediaPlayer.framework in Frameworks */,
+				099C428B13259B1500A160C4 /* CoreAudio.framework in Frameworks */,
+				099C428F13259B2900A160C4 /* CoreLocation.framework in Frameworks */,
+				099C429313259B4700A160C4 /* AudioToolbox.framework in Frameworks */,
+				098D40A5132E06AE00D1A886 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +504,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				099C4251132592D500A160C4 /* AdMob */,
 				099C3CD61314D13500A160C4 /* AdWhirl */,
 				099C38CA1307D94400A160C4 /* FBConnect */,
 				09B2537812F956D800E1D08A /* DataModel */,
@@ -532,6 +571,8 @@
 		099C3CD71314D13500A160C4 /* adapters */ = {
 			isa = PBXGroup;
 			children = (
+				099C425A132592F200A160C4 /* AdWhirlAdapterAdMob.h */,
+				099C425B132592F200A160C4 /* AdWhirlAdapterAdMob.m */,
 				099C3CD81314D13500A160C4 /* AdWhirlAdapterIAd.h */,
 				099C3CD91314D13500A160C4 /* AdWhirlAdapterIAd.m */,
 				099C3CDA1314D13500A160C4 /* AdWhirlAdNetworkAdapter.h */,
@@ -634,6 +675,18 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		099C4251132592D500A160C4 /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				099C4252132592D500A160C4 /* AdMobDelegateProtocol.h */,
+				099C4253132592D500A160C4 /* AdMobInterstitialAd.h */,
+				099C4254132592D500A160C4 /* AdMobInterstitialDelegateProtocol.h */,
+				099C4255132592D500A160C4 /* AdMobView.h */,
+				099C4256132592D600A160C4 /* libAdMob.a */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
 		09B2537812F956D800E1D08A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -693,7 +746,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */,
+				1D6058910D05DD3D006BFB54 /* TriviaBettingiPhone.app */,
 				09B253FE12F966DE00E1D08A /* TriviaBettingiPhone.app */,
 				09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */,
 			);
@@ -725,6 +778,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				098D4197132E172800D1A886 /* TriviaBetting.sqlite */,
 				099C3BB71313C06500A160C4 /* MorePuzzlesViewController.xib */,
 				09B2558F12F97BF900E1D08A /* PuzzleViewController.xib */,
 				09B2554012F9701500E1D08A /* PuzzlesViewController.xib */,
@@ -755,13 +809,19 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				099C3DD81314D8DE00A160C4 /* CoreLocation.framework */,
+				098D40A4132E06AE00D1A886 /* QuartzCore.framework */,
+				099C429213259B4700A160C4 /* AudioToolbox.framework */,
 				099C3D431314D14500A160C4 /* iAd.framework */,
 				09B2537F12F957FC00E1D08A /* CoreData.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				099C3C761313D8E000A160C4 /* SystemConfiguration.framework */,
+				099C42601325931200A160C4 /* MessageUI.framework */,
+				099C4275132593BE00A160C4 /* AVFoundation.framework */,
+				099C428413259AFF00A160C4 /* MediaPlayer.framework */,
+				099C428A13259B1500A160C4 /* CoreAudio.framework */,
+				099C428E13259B2900A160C4 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -819,7 +879,7 @@
 			);
 			name = TriviaBettingiPhone;
 			productName = TriviaBettingiPhone;
-			productReference = 1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* TriviaBettingiPhone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -876,6 +936,7 @@
 				099C3AB3130E031800A160C4 /* counter-background.png in Resources */,
 				099C3BBB1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
 				099C3D281314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */,
+				098D4199132E172800D1A886 /* TriviaBetting.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +968,7 @@
 				099C3AB4130E031800A160C4 /* counter-background.png in Resources */,
 				099C3BB91313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
 				099C3D141314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */,
+				098D4198132E172800D1A886 /* TriviaBetting.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,6 +998,7 @@
 				099C3AB5130E031800A160C4 /* counter-background.png in Resources */,
 				099C3BBD1313C06500A160C4 /* MorePuzzlesViewController.xib in Resources */,
 				099C3D3C1314D13500A160C4 /* AdWhirlWebBrowser.xib in Resources */,
+				098D419A132E172800D1A886 /* TriviaBetting.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,6 +1080,7 @@
 				099C3DC91314D8BB00A160C4 /* CJSONScanner.m in Sources */,
 				099C3DCA1314D8BB00A160C4 /* CJSONSerializer.m in Sources */,
 				099C3DCB1314D8BB00A160C4 /* CSerializedJSONData.m in Sources */,
+				099C425D132592F200A160C4 /* AdWhirlAdapterAdMob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1079,6 +1143,7 @@
 				099C3DBF1314D8BB00A160C4 /* CJSONScanner.m in Sources */,
 				099C3DC01314D8BB00A160C4 /* CJSONSerializer.m in Sources */,
 				099C3DC11314D8BB00A160C4 /* CSerializedJSONData.m in Sources */,
+				099C425C132592F200A160C4 /* AdWhirlAdapterAdMob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,6 +1206,7 @@
 				099C3DD31314D8BB00A160C4 /* CJSONScanner.m in Sources */,
 				099C3DD41314D8BB00A160C4 /* CJSONSerializer.m in Sources */,
 				099C3DD51314D8BB00A160C4 /* CSerializedJSONData.m in Sources */,
+				099C425E132592F200A160C4 /* AdWhirlAdapterAdMob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,6 +1231,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
 				INFOPLIST_FILE = "TriviaBettingiPhone-Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/AdMob\"",
+				);
 				PRODUCT_NAME = TriviaBettingiPhone;
 			};
 			name = Debug;
@@ -1177,6 +1247,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
 				INFOPLIST_FILE = "TriviaBettingiPhone-Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/AdMob\"",
+				);
 				PRODUCT_NAME = TriviaBettingiPhone;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1197,6 +1271,10 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "TrivaBettingiPhoneUnitTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/AdMob\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1226,6 +1304,10 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = "TrivaBettingiPhoneUnitTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/AdMob\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1246,13 +1328,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hugo Troche (8N62QF58Y3)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
 				INFOPLIST_FILE = "TriviaBettingiPhone-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/AdMob\"",
+				);
 				PRODUCT_NAME = CrowdTrivia;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED228198-3CD3-40EF-91C4-F63B70733D82";
 			};
 			name = Debug;
 		};
@@ -1260,11 +1348,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hugo Troche";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TriviaBettingiPhone_Prefix.pch;
 				INFOPLIST_FILE = "TriviaBettingiPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes/AdMob\"",
+				);
 				PRODUCT_NAME = TriviaBettingiPhone;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "03F7F65A-ED9E-41F3-A8B9-B9E34C378C9C";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

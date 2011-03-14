@@ -12,6 +12,8 @@
 #import "Question.h"
 #import "DataModel.h"
 
+static Game *game = nil;
+
 @implementation Game 
 
 @dynamic timeLeft;
@@ -20,20 +22,31 @@
 @dynamic question;
 @dynamic puzzle;
 
++ (Game *) getNewGame {
+	game = [NSEntityDescription insertNewObjectForEntityForName:@"Game" 
+										 inManagedObjectContext:[[DataModel getInstance] managedObjectContext]];
+	[game retain];
+	return game;
+}
+
 + (Game *) getGame {
-	NSFetchRequest *request = [[NSFetchRequest alloc] init];
-	NSEntityDescription *entity  = [NSEntityDescription entityForName:@"Game" 
-											   inManagedObjectContext:[[DataModel getInstance] managedObjectContext]];
-	[request setEntity:entity];
-	NSArray *array = [[[DataModel getInstance] managedObjectContext] executeFetchRequest:request error:nil];
-	[request release];						   
-	if(array == nil || [array count] == 0) {
-		Game *game = [NSEntityDescription insertNewObjectForEntityForName:@"Game" 
-															 inManagedObjectContext:[[DataModel getInstance] managedObjectContext]];
-		return game;
+	if(game == nil) {
+		NSFetchRequest *request = [[NSFetchRequest alloc] init];
+		NSEntityDescription *entity  = [NSEntityDescription entityForName:@"Game" 
+												   inManagedObjectContext:[[DataModel getInstance] managedObjectContext]];
+		[request setEntity:entity];
+		NSArray *array = [[[DataModel getInstance] managedObjectContext] executeFetchRequest:request error:nil];
+		[request release];						   
+		if(array == nil || [array count] == 0) {
+			//game = [NSEntityDescription insertNewObjectForEntityForName:@"Game" 
+			//									 inManagedObjectContext:[[DataModel getInstance] managedObjectContext]];
+			return game;
+		} else {
+			return [array objectAtIndex:0];
+		}
 	} else {
-		return [array objectAtIndex:0];
-	}
+		return game;
+	}	
 }
 
 - (void) changeCredits:(int) delta {

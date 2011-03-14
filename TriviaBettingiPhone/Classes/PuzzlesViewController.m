@@ -90,6 +90,7 @@
 	
 	pageControl.numberOfPages = (nPuzzle + 1);
 	[scrollView setContentSize:CGSizeMake(cx, [scrollView bounds].size.height)];
+	[self setupButtonLabel];
 	
 }
 
@@ -140,10 +141,8 @@
 - (IBAction) playButtonPressed:(id) sender {
 	if((pageControl.currentPage + 1) == pageControl.numberOfPages) {
 		if([self hasInternetConnection]) {
-			[[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"lastUpdated"];
-			[[NSUserDefaults standardUserDefaults] synchronize];
-			[activityIndicator startAnimating];
 			[Puzzle getServerPuzzles:self];
+			[activityIndicator startAnimating];
 		} else {
 			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet" message:@"You need an internet connection to get more quizzes." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 			[alert show];
@@ -151,12 +150,16 @@
 		return;
 	}
 	Game *game = [Game getGame];
+	if(game == nil) {
+		game = [Game getNewGame];
+	}
 	Puzzle *p = [puzzles objectAtIndex:pageControl.currentPage];
 	p.lastPlayed = [NSDate date];
 	game.puzzle = p;
 	NSArray *questions = [p.questions allObjects];
 	if([questions count] == 0) {
 		[activityIndicator startAnimating];
+		[self setStatusMessage:@"Getting questions..."];
 		[p getServerQuestions:self];
 		return;
 	} else {
@@ -192,6 +195,9 @@
 	statusLabel.hidden = YES;
 	[activityIndicator stopAnimating];
 	Game *game = [Game getGame];
+	if(game == nil) {
+		game = [Game getNewGame];
+	}
 	Puzzle *p = [puzzles objectAtIndex:pageControl.currentPage];
 	p.lastPlayed = [NSDate date];
 	game.puzzle = p;
@@ -207,6 +213,11 @@
 
 - (void) fetchError {
 	[activityIndicator stopAnimating];
+}
+
+- (void) finishedMessage:(NSString *)message {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Finished" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[alert show];
 }
 
 - (BOOL) hasInternetConnection {

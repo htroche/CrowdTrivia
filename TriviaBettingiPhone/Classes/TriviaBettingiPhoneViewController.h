@@ -49,6 +49,7 @@ FBDialogDelegate,FBSessionDelegate,UIAlertViewDelegate,AdWhirlDelegate> {
 - (void) resetBoard;
 - (void) puzzleFinished;
 - (void) pauseGame:(BOOL) pause;
+- (void) colorAnswers;
 
 
 @end
