@@ -267,11 +267,11 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>099C3CD61314D13500A160C4</string>
 								<string>09B2557812F9783800E1D08A</string>
 								<string>09B253C512F95FEE00E1D08A</string>
 								<string>09B254F512F9682000E1D08A</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -280,12 +280,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>69</integer>
+									<integer>36</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 857}, {343, 587}}</string>
+							<string>{{0, 0}, {343, 583}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -297,14 +297,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {360, 605}}</string>
+						<string>{{0, 0}, {360, 601}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>343</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1313 113 1222 646 1280 -224 1280 1024 </string>
+						<string>60 136 1222 642 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TrivaBettingiPhoneUnitTest-Info.plist</string>
+								<string>TriviaBetting.xcdatamodel</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TrivaBettingiPhoneUnitTest-Info.plist</string>
+										<string>TriviaBetting.xcdatamodel</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>098D41DB132E1B1800D1A886</string>
+										<string>09D886C21353A63D0063F067</string>
 										<key>history</key>
 										<array>
 											<string>09B256AB12FA9CB700E1D08A</string>
@@ -392,7 +392,6 @@
 											<string>099C42D51325D49F00A160C4</string>
 											<string>099C42D61325D49F00A160C4</string>
 											<string>098D40DC132E06DF00D1A886</string>
-											<string>098D4134132E0A0D00D1A886</string>
 											<string>098D4144132E0A9800D1A886</string>
 											<string>098D4156132E0C7B00D1A886</string>
 											<string>098D4157132E0C7B00D1A886</string>
@@ -403,7 +402,8 @@
 											<string>098D41D7132E1B1800D1A886</string>
 											<string>098D41D8132E1B1800D1A886</string>
 											<string>098D41D9132E1B1800D1A886</string>
-											<string>098D41DA132E1B1800D1A886</string>
+											<string>098D43191339535300D1A886</string>
+											<string>09D88604134FCF960063F067</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -415,14 +415,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {857, 337}}</string>
+								<string>{{0, 0}, {857, 304}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1313 113 1222 646 1280 -224 1280 1024 </string>
+								<string>60 136 1222 642 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>337pt</string>
+							<string>304pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -435,14 +435,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 342}, {857, 263}}</string>
+								<string>{{0, 309}, {857, 292}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1313 113 1222 646 1280 -224 1280 1024 </string>
+								<string>60 136 1222 642 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>263pt</string>
+							<string>292pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -461,9 +461,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>098D40DE132E06DF00D1A886</string>
+				<string>09D886C31353A63D0063F067</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>098D40DF132E06DF00D1A886</string>
+				<string>09D886C41353A63D0063F067</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -601,15 +601,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>098D4122132E089700D1A886</string>
-		<string>098D40E8132E06DF00D1A886</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>09B252F212F920C800E1D08A</string>
 		<string>/Users/htroche/Documents/triviabetting/TriviaBettingiPhone/TriviaBettingiPhone.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1313 113 1222 646 1280 -224 1280 1024 </string>
+	<string>60 136 1222 642 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -639,7 +635,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {661, 262}}</string>
 								<key>RubberWindowFrame</key>
-								<string>267 176 661 544 0 0 1280 778 </string>
+								<string>1540 166 661 544 1280 -224 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -647,8 +643,6 @@
 							<string>262pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -665,7 +659,7 @@
 								<key>Frame</key>
 								<string>{{0, 267}, {661, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>267 176 661 544 0 0 1280 778 </string>
+								<string>1540 166 661 544 1280 -224 1280 1024 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -688,7 +682,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>09B252F212F920C800E1D08A</string>
-				<string>098D408D132E069900D1A886</string>
+				<string>09D886C51353A63D0063F067</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -697,11 +691,11 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>267 176 661 544 0 0 1280 778 </string>
+			<string>1540 166 661 544 1280 -224 1280 1024 </string>
 			<key>WindowToolGUID</key>
 			<string>09B252F212F920C800E1D08A</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -810,13 +804,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>098D40E0132E06DF00D1A886</string>
+				<string>098D430F1339533700D1A886</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>098D40E1132E06DF00D1A886</string>
-				<string>098D40E2132E06DF00D1A886</string>
-				<string>098D40E3132E06DF00D1A886</string>
-				<string>098D40E4132E06DF00D1A886</string>
-				<string>098D40E5132E06DF00D1A886</string>
+				<string>098D43101339533700D1A886</string>
+				<string>098D43111339533700D1A886</string>
+				<string>098D43121339533700D1A886</string>
+				<string>098D43131339533700D1A886</string>
+				<string>098D43141339533700D1A886</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -980,7 +974,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>098D40E6132E06DF00D1A886</string>
+				<string>098D43151339533700D1A886</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
