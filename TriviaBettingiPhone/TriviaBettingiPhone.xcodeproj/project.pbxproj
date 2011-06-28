@@ -440,7 +440,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaBettingiPhoneAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* TriviaBettingiPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaBettingiPhoneAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* TriviaBettingiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaBettingiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* TriviaBettingiPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TriviaBettingiPhoneViewController.xib; sourceTree = "<group>"; };
@@ -746,7 +746,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* TriviaBettingiPhone.app */,
+				1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */,
 				09B253FE12F966DE00E1D08A /* TriviaBettingiPhone.app */,
 				09B2540612F966FF00E1D08A /* TrivaBettingiPhoneUnitTest.octest */,
 			);
@@ -879,7 +879,7 @@
 			);
 			name = TriviaBettingiPhone;
 			productName = TriviaBettingiPhone;
-			productReference = 1D6058910D05DD3D006BFB54 /* TriviaBettingiPhone.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* CrowdTrivia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1358,7 +1358,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Classes/AdMob\"",
 				);
-				PRODUCT_NAME = TriviaBettingiPhone;
+				PRODUCT_NAME = CrowdTrivia;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "03F7F65A-ED9E-41F3-A8B9-B9E34C378C9C";
 				VALIDATE_PRODUCT = YES;
 			};
