@@ -12,7 +12,7 @@
 #import "Question.h"
 #import "AdWhirlView.h"
 
-static NSString* kAppId = @"136114726451991";
+static NSString* kAppId = @"yourfacebookapikey";
 
 @implementation TriviaBettingiPhoneViewController
 
@@ -355,7 +355,7 @@ static NSString* kAppId = @"136114726451991";
 }
 
 - (NSString *)adWhirlApplicationKey {
-	return @"90df21e453734c0fb2ad474b1f2434c7";
+	return @"yourwhildwindkey";
 }
 
 - (UIViewController *)viewControllerForPresentingModalView {
